@@ -1,0 +1,1592 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.0.4.final using JasperReports Library version 6.0.4  -->
+<!-- 2015-08-06T14:46:07 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="koshow1" pageWidth="802" pageHeight="555" orientation="Landscape" columnWidth="802" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="81e376a6-63b8-4283-b77f-ab4b7bf0f4bb">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="logo" class="java.lang.String"/>
+	<field name="name1" class="java.lang.String"/>
+	<field name="name2" class="java.lang.String"/>
+	<group name="Group1"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="555" splitType="Stretch">
+			<image scaleImage="RetainShape">
+				<reportElement x="0" y="0" width="802" height="100" uuid="07c00178-170b-42a7-b478-e64d2c7496b0"/>
+				<imageExpression><![CDATA["img/form_festivity/h.png"]]></imageExpression>
+			</image>
+			<image scaleImage="RetainShape" hAlign="Right">
+				<reportElement x="0" y="455" width="802" height="100" uuid="336e2aa6-f594-4b2e-a593-c873e14ae22f"/>
+				<imageExpression><![CDATA["img/form_festivity/f.png"]]></imageExpression>
+			</image>
+			<image scaleImage="FillFrame">
+				<reportElement x="670" y="10" width="120" height="80" uuid="ef99224f-220e-4c03-8a04-5ce6fe179762"/>
+				<imageExpression><![CDATA["img/festivity/"+$F{logo}]]></imageExpression>
+			</image>
+			<line>
+				<reportElement x="100" y="80" width="510" height="1" uuid="76d95914-d62a-417f-8393-b0ae5b7a46ab"/>
+			</line>
+			<staticText>
+				<reportElement mode="Opaque" x="150" y="140" width="30" height="30" backcolor="#B0AEAE" uuid="9c17b7d5-84cc-4c00-85f4-c4440299ab2e"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ลำดับ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="180" y="140" width="80" height="30" backcolor="#B0AEAE" uuid="63cb8f6d-efd9-4cad-927d-41fd43e8335e"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[โค]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="260" y="140" width="80" height="30" backcolor="#B0AEAE" uuid="6524213a-f560-4a66-83de-c3207f63ca23"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[พ่อ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="420" y="140" width="80" height="30" backcolor="#B0AEAE" uuid="2874779c-9a2c-446e-827c-f985a224da1c"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[วันเกิด]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="500" y="140" width="60" height="30" backcolor="#B0AEAE" uuid="7db5795d-9984-46d1-980a-b689e5807ed3"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[อายุ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="560" y="140" width="90" height="30" backcolor="#B0AEAE" uuid="61d9fadd-7e11-49e1-9a2b-63ca14675f95"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ผู้พัฒนาพันธุ์]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="650" y="140" width="90" height="30" backcolor="#B0AEAE" uuid="cf00cab8-208d-4e47-a205-f7048c31dcbf"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[เจ้าของปัจจุบัน]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="100" y="140" width="50" height="30" backcolor="#B0AEAE" uuid="cf7b2dd1-9961-45aa-8de1-1d41e01edca0"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ผล]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="340" y="140" width="80" height="30" backcolor="#B0AEAE" uuid="8935e7d2-e70b-406e-ba14-05b60cb30770"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[แม่]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="100" y="270" width="50" height="30" backcolor="#B0AEAE" uuid="f2c99c8a-c9de-44e5-8126-825160bcd59b"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ผล]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="420" y="270" width="80" height="30" backcolor="#B0AEAE" uuid="65984247-5525-4d28-b627-f856d8b97d51"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[วันเกิด]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="180" y="270" width="80" height="30" backcolor="#B0AEAE" uuid="074dcc1d-7cb0-447c-b885-2bb2d3922ea6"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[โค]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="340" y="270" width="80" height="30" backcolor="#B0AEAE" uuid="19498f65-0bbf-4e23-8166-c3ac7f967ca4"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[แม่]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="150" y="270" width="30" height="30" backcolor="#B0AEAE" uuid="6b2dd301-7287-47f0-afa3-bd256c3e4f95"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ลำดับ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="560" y="270" width="90" height="30" backcolor="#B0AEAE" uuid="dd791e1b-a5fe-4ab3-bdbd-a0672987f22b"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ผู้พัฒนาพันธุ์]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="650" y="270" width="90" height="30" backcolor="#B0AEAE" uuid="4c1175b1-9e29-4a58-96e5-3a028afd6a9b"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[เจ้าของปัจจุบัน]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="260" y="270" width="80" height="30" backcolor="#B0AEAE" uuid="d92dab46-faba-4b71-bb51-65eafd639837"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[พ่อ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="500" y="270" width="60" height="30" backcolor="#B0AEAE" uuid="0d44bc86-2030-4299-a3cf-a314684bb44a"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[อายุ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="100" y="390" width="50" height="30" backcolor="#B0AEAE" uuid="f379961a-2563-42a6-a8fb-2bb0aa5dd920"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ผล]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="420" y="390" width="80" height="30" backcolor="#B0AEAE" uuid="19547b8d-501a-4c10-b6b9-0600860ddf0f"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[วันเกิด]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="180" y="390" width="80" height="30" backcolor="#B0AEAE" uuid="f51a0d74-deae-4d1e-a575-f41fa338b778"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[โค]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="340" y="390" width="80" height="30" backcolor="#B0AEAE" uuid="488c1be1-a3b7-445d-a215-0c42bfd236b7"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[แม่]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="150" y="390" width="30" height="30" backcolor="#B0AEAE" uuid="4c08497f-f3d3-4f80-80b8-3bc3d5f6fc75"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ลำดับ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="560" y="390" width="90" height="30" backcolor="#B0AEAE" uuid="461f94ef-adb8-48b4-bdcf-d11fa7e69336"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ผู้พัฒนาพันธุ์]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="650" y="390" width="90" height="30" backcolor="#B0AEAE" uuid="db3ff6c5-83b3-4726-8d3c-73987b2d5e8a"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[เจ้าของปัจจุบัน]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="260" y="390" width="80" height="30" backcolor="#B0AEAE" uuid="a5415972-c3e6-4664-8066-bc44160b010c"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[พ่อ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="500" y="390" width="60" height="30" backcolor="#B0AEAE" uuid="bd51f754-f710-45ae-b913-21aaa031bba5"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[อายุ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="180" y="170" width="80" height="30" uuid="faf69cc6-e191-4cc1-9f5a-8fe66830a3d3"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{name1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="666" y="505" width="100" height="30" uuid="07e9e348-3509-4081-8104-e731fbf8279f"/>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="555">
+			<image scaleImage="RetainShape" hAlign="Right">
+				<reportElement x="0" y="455" width="802" height="100" printWhenGroupChanges="Group1" uuid="f9d98209-cfde-4fd7-bde1-d5f82c32b905">
+					<printWhenExpression><![CDATA[$V{PAGE_NUMBER}==2]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA["img/form_festivity/f.png"]]></imageExpression>
+			</image>
+			<image scaleImage="RetainShape">
+				<reportElement x="0" y="0" width="802" height="100" uuid="9e0f639e-6078-43ae-bb9a-8a96eec9d837">
+					<printWhenExpression><![CDATA[$V{PAGE_NUMBER}==2]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA["img/form_festivity/h.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement mode="Opaque" x="560" y="140" width="90" height="30" backcolor="#B0AEAE" uuid="6cc1ea52-cc69-4045-ae65-dd26ba145216">
+					<printWhenExpression><![CDATA[$V{PAGE_NUMBER}==2]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ผู้พัฒนาพันธุ์]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="500" y="270" width="60" height="30" backcolor="#B0AEAE" uuid="fbcb15ff-35c5-4c69-814e-4c68d41ffe5d">
+					<printWhenExpression><![CDATA[$V{PAGE_NUMBER}==2]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[อายุ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="650" y="390" width="90" height="30" backcolor="#B0AEAE" uuid="d2b09529-1c68-4c22-a09c-49042d72ed03">
+					<printWhenExpression><![CDATA[$V{PAGE_NUMBER}==2]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[เจ้าของปัจจุบัน]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="500" y="390" width="60" height="30" backcolor="#B0AEAE" uuid="6e155e01-62f5-476d-9157-5d16aace78d9">
+					<printWhenExpression><![CDATA[$V{PAGE_NUMBER}==2]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[อายุ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="420" y="270" width="80" height="30" backcolor="#B0AEAE" uuid="e976d4c5-6491-4211-b0f9-cc95b64ce657">
+					<printWhenExpression><![CDATA[$V{PAGE_NUMBER}==2]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[วันเกิด]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="560" y="390" width="90" height="30" backcolor="#B0AEAE" uuid="e34fe8e5-2e38-41a8-b6ff-52968943a301">
+					<printWhenExpression><![CDATA[$V{PAGE_NUMBER}==2]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ผู้พัฒนาพันธุ์]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="340" y="140" width="80" height="30" backcolor="#B0AEAE" uuid="1507b6da-6736-427b-ad24-3e67d8670171">
+					<printWhenExpression><![CDATA[$V{PAGE_NUMBER}==2]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[แม่]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="420" y="390" width="80" height="30" backcolor="#B0AEAE" uuid="5b5db3ee-7996-40a9-9b4e-6d014f9d246a">
+					<printWhenExpression><![CDATA[$V{PAGE_NUMBER}==2]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[วันเกิด]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="340" y="390" width="80" height="30" backcolor="#B0AEAE" uuid="024f4278-bfbb-40ca-80aa-12a07bdaaacc">
+					<printWhenExpression><![CDATA[$V{PAGE_NUMBER}==2]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[แม่]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="260" y="270" width="80" height="30" backcolor="#B0AEAE" uuid="4a05899f-a36d-4214-9dcb-d875670a0a61">
+					<printWhenExpression><![CDATA[$V{PAGE_NUMBER}==2]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[พ่อ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="100" y="390" width="50" height="30" backcolor="#B0AEAE" uuid="b79c2580-6324-4f9e-a5e8-521ff49e7451">
+					<printWhenExpression><![CDATA[$V{PAGE_NUMBER}==2]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ผล]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="150" y="140" width="30" height="30" backcolor="#B0AEAE" uuid="a834fab7-ef6f-450c-9880-70540c4e7b7e">
+					<printWhenExpression><![CDATA[$V{PAGE_NUMBER}==2]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ลำดับ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="150" y="270" width="30" height="30" backcolor="#B0AEAE" uuid="9c1fa463-7c32-48e9-a8d4-ddc16c6e66fd">
+					<printWhenExpression><![CDATA[$V{PAGE_NUMBER}==2]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ลำดับ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="180" y="390" width="80" height="30" backcolor="#B0AEAE" uuid="7692ec5f-dd3a-4c0e-92c6-db3cae8e7def">
+					<printWhenExpression><![CDATA[$V{PAGE_NUMBER}==2]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[โค]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="180" y="270" width="80" height="30" backcolor="#B0AEAE" uuid="c3bb0b99-5002-4413-9d62-8efcf84bc535">
+					<printWhenExpression><![CDATA[$V{PAGE_NUMBER}==2]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[โค]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="560" y="270" width="90" height="30" backcolor="#B0AEAE" uuid="eebacb7b-3662-4b44-a61a-f2b142df5ba2">
+					<printWhenExpression><![CDATA[$V{PAGE_NUMBER}==2]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ผู้พัฒนาพันธุ์]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="180" y="140" width="80" height="30" backcolor="#B0AEAE" uuid="f9e9eec6-bbc2-411e-8fbd-e684bef8e633">
+					<printWhenExpression><![CDATA[$V{PAGE_NUMBER}==2]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[โค]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="260" y="390" width="80" height="30" backcolor="#B0AEAE" uuid="cb3b49a9-f676-40e2-8df8-f3dafd81ca5f">
+					<printWhenExpression><![CDATA[$V{PAGE_NUMBER}==2]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[พ่อ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="500" y="140" width="60" height="30" backcolor="#B0AEAE" uuid="40a0bbb0-647f-419c-831a-ff3e2dd0f29f">
+					<printWhenExpression><![CDATA[$V{PAGE_NUMBER}==2]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[อายุ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="420" y="140" width="80" height="30" backcolor="#B0AEAE" uuid="8e0ed6c3-856c-4959-8c23-94c6283a5e3b">
+					<printWhenExpression><![CDATA[$V{PAGE_NUMBER}==2]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[วันเกิด]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="650" y="140" width="90" height="30" backcolor="#B0AEAE" uuid="a654978f-000f-4e77-95b6-85232bad4385">
+					<printWhenExpression><![CDATA[$V{PAGE_NUMBER}==2]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[เจ้าของปัจจุบัน]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="150" y="390" width="30" height="30" backcolor="#B0AEAE" uuid="0502e584-be16-4f3c-8fc9-e91f4e00e321">
+					<printWhenExpression><![CDATA[$V{PAGE_NUMBER}==2]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ลำดับ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="100" y="140" width="50" height="30" backcolor="#B0AEAE" uuid="1b025086-a6ed-4b9a-83d8-d733b8a0861b">
+					<printWhenExpression><![CDATA[$V{PAGE_NUMBER}==2]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ผล]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="650" y="270" width="90" height="30" backcolor="#B0AEAE" uuid="59bb0e78-9217-4ab3-a4de-196919857fdf">
+					<printWhenExpression><![CDATA[$V{PAGE_NUMBER}==2]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[เจ้าของปัจจุบัน]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="340" y="270" width="80" height="30" backcolor="#B0AEAE" uuid="19930c0d-5ab0-422d-98d1-1ba17bb47db3">
+					<printWhenExpression><![CDATA[$V{PAGE_NUMBER}==2]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[แม่]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="100" y="270" width="50" height="30" backcolor="#B0AEAE" uuid="db9783a7-171a-41f0-9b4d-37f7f6af6e2f">
+					<printWhenExpression><![CDATA[$V{PAGE_NUMBER}==2]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ผล]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="260" y="140" width="80" height="30" backcolor="#B0AEAE" uuid="ff2fe05f-ca05-40d9-b097-d01a67be6b40">
+					<printWhenExpression><![CDATA[$V{PAGE_NUMBER}==2]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[พ่อ]]></text>
+			</staticText>
+			<image scaleImage="FillFrame">
+				<reportElement x="670" y="10" width="120" height="80" uuid="683dd016-aca0-486f-ab3f-a194e52f482c">
+					<printWhenExpression><![CDATA[$V{PAGE_NUMBER}==2]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA["img/festivity/"+$F{logo}]]></imageExpression>
+			</image>
+			<line>
+				<reportElement x="100" y="80" width="510" height="1" uuid="3a3456fc-2c9a-458a-bcfb-29706edde1ac">
+					<printWhenExpression><![CDATA[$V{PAGE_NUMBER}==2]]></printWhenExpression>
+				</reportElement>
+			</line>
+			<textField>
+				<reportElement x="180" y="170" width="80" height="30" uuid="a0d1fa0a-5957-4a4b-81f5-d73b3d9e6603">
+					<printWhenExpression><![CDATA[$V{PAGE_NUMBER}==2]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["YOOO"]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="555">
+			<property name="local_mesure_unitheight" value="pixel"/>
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<image scaleImage="RetainShape" hAlign="Right">
+				<reportElement x="0" y="455" width="802" height="100" uuid="b13312a0-f042-46db-a750-bb010fef1c24"/>
+				<imageExpression><![CDATA["img/form_festivity/f.png"]]></imageExpression>
+			</image>
+			<image scaleImage="RetainShape">
+				<reportElement x="0" y="0" width="802" height="100" uuid="c5f4aff2-850c-40ec-a216-4279823c5bee"/>
+				<imageExpression><![CDATA["img/form_festivity/h.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement mode="Opaque" x="560" y="140" width="90" height="30" backcolor="#B0AEAE" uuid="69bc5c5e-c69c-48b6-b7d9-2bebe7180393"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ผู้พัฒนาพันธุ์]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="500" y="270" width="60" height="30" backcolor="#B0AEAE" uuid="0a92d2be-79d4-4ed7-9b1e-3b8e73ef041c"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[อายุ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="650" y="390" width="90" height="30" backcolor="#B0AEAE" uuid="e731b3b8-ea25-4173-abbe-3d2bbdd45afd"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[เจ้าของปัจจุบัน]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="500" y="390" width="60" height="30" backcolor="#B0AEAE" uuid="0d7d5ebf-17a7-44ed-8903-cae8077d22de"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[อายุ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="420" y="270" width="80" height="30" backcolor="#B0AEAE" uuid="f2eff2fd-3238-471b-9bb8-6210282f7993"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[วันเกิด]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="560" y="390" width="90" height="30" backcolor="#B0AEAE" uuid="0d4e1e61-9dd2-4899-84a2-5456243dfff5"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ผู้พัฒนาพันธุ์]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="340" y="140" width="80" height="30" backcolor="#B0AEAE" uuid="c54c2ed2-ef62-4ab9-be3f-2bc2e5e6c2a1"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[แม่]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="420" y="390" width="80" height="30" backcolor="#B0AEAE" uuid="cb006b13-038a-4a78-a098-e6f60fb72f53"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[วันเกิด]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="340" y="390" width="80" height="30" backcolor="#B0AEAE" uuid="49c6b1a1-26b3-442d-bf5e-b97d646af1a6"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[แม่]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="260" y="270" width="80" height="30" backcolor="#B0AEAE" uuid="53506712-0196-454d-921c-4491f61b8e4b"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[พ่อ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="100" y="390" width="50" height="30" backcolor="#B0AEAE" uuid="dd2ad261-3541-421a-92e4-f240dc668eae"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ผล]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="150" y="140" width="30" height="30" backcolor="#B0AEAE" uuid="30174e5b-4526-4b81-aa94-bc44efdcad45"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ลำดับ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="150" y="270" width="30" height="30" backcolor="#B0AEAE" uuid="e4f0ac60-518a-4c60-9108-296362a43a03"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ลำดับ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="180" y="390" width="80" height="30" backcolor="#B0AEAE" uuid="5de8255e-fa81-41b1-bc8f-cc0c2bdd78b6"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[โค]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="180" y="270" width="80" height="30" backcolor="#B0AEAE" uuid="b68c4d92-f108-4f25-8b08-fc95c4f6b535"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[โค]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="560" y="270" width="90" height="30" backcolor="#B0AEAE" uuid="c6f003ec-1095-4925-91db-ffbe631e854d"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ผู้พัฒนาพันธุ์]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="180" y="140" width="80" height="30" backcolor="#B0AEAE" uuid="756ce50f-493d-4244-9354-93f2390e6d02"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[โค]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="260" y="390" width="80" height="30" backcolor="#B0AEAE" uuid="7f14b9a1-3668-4458-9a24-743dac56c649"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[พ่อ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="500" y="140" width="60" height="30" backcolor="#B0AEAE" uuid="5bd3c829-3170-4667-8b7b-fe20a8e7b090"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[อายุ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="420" y="140" width="80" height="30" backcolor="#B0AEAE" uuid="76056259-c3c0-4888-b521-82e6bfede6c3"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[วันเกิด]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="650" y="140" width="90" height="30" backcolor="#B0AEAE" uuid="ab3f98bd-6fd1-4132-8af8-11be46c236ae"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[เจ้าของปัจจุบัน]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="150" y="390" width="30" height="30" backcolor="#B0AEAE" uuid="008bbab6-79ad-4b16-aa1e-085d4bcff434"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ลำดับ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="100" y="140" width="50" height="30" backcolor="#B0AEAE" uuid="ee4334dd-43dd-40f8-814f-72cde4a880c3"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ผล]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="650" y="270" width="90" height="30" backcolor="#B0AEAE" uuid="d1936481-41f9-4983-9185-783c3b978f28"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[เจ้าของปัจจุบัน]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="340" y="270" width="80" height="30" backcolor="#B0AEAE" uuid="3b32e984-5b52-4328-8638-a9bbdd598a6f"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[แม่]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="100" y="270" width="50" height="30" backcolor="#B0AEAE" uuid="b863cc5c-769d-4700-b244-c40db54118d0"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ผล]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="260" y="140" width="80" height="30" backcolor="#B0AEAE" uuid="9a71dbd0-40a1-466f-bd5a-3b9d210ce031"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[พ่อ]]></text>
+			</staticText>
+			<image scaleImage="FillFrame">
+				<reportElement x="670" y="10" width="120" height="80" uuid="3b951ae4-c64b-471e-8205-76a7f2d8e9c2"/>
+				<imageExpression><![CDATA["img/festivity/"+$F{logo}]]></imageExpression>
+			</image>
+			<line>
+				<reportElement x="100" y="80" width="510" height="1" uuid="3d0ae201-8e51-42f7-b2be-bedf445bb749"/>
+			</line>
+			<textField>
+				<reportElement x="666" y="505" width="100" height="30" uuid="6e5ee251-363c-4074-af29-00d170b978f5"/>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="555">
+			<property name="local_mesure_unitheight" value="pixel"/>
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<image scaleImage="RetainShape" hAlign="Right">
+				<reportElement x="0" y="455" width="802" height="100" uuid="73353038-8a45-4e75-8770-62556a1b7fc9"/>
+				<imageExpression><![CDATA["img/form_festivity/f.png"]]></imageExpression>
+			</image>
+			<image scaleImage="RetainShape">
+				<reportElement x="0" y="0" width="802" height="100" uuid="3002b097-8353-42ce-b0d3-f6e86f6fa951"/>
+				<imageExpression><![CDATA["img/form_festivity/h.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement mode="Opaque" x="560" y="140" width="90" height="30" backcolor="#B0AEAE" uuid="d15abf7d-ff2a-4c4d-b286-997d424c3e11"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ผู้พัฒนาพันธุ์]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="500" y="270" width="60" height="30" backcolor="#B0AEAE" uuid="47b58f1e-15c6-4a36-a99a-40df12ebe63a"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[อายุ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="650" y="390" width="90" height="30" backcolor="#B0AEAE" uuid="9f99209d-0d5d-4cd1-a863-38d5944c3c99"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[เจ้าของปัจจุบัน]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="500" y="390" width="60" height="30" backcolor="#B0AEAE" uuid="67bfb2d7-c520-429a-8e77-37f4c5ee0380"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[อายุ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="420" y="270" width="80" height="30" backcolor="#B0AEAE" uuid="1366979e-c1df-4bf2-9990-9c0abde202f5"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[วันเกิด]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="560" y="390" width="90" height="30" backcolor="#B0AEAE" uuid="b0d9638a-f64a-43ce-af64-fdb8ee5d2508"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ผู้พัฒนาพันธุ์]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="340" y="140" width="80" height="30" backcolor="#B0AEAE" uuid="09d6f55f-1794-4e6f-a253-4508391a9506"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[แม่]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="420" y="390" width="80" height="30" backcolor="#B0AEAE" uuid="82689f9a-0383-487a-85e2-7d9e2c494b1e"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[วันเกิด]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="340" y="390" width="80" height="30" backcolor="#B0AEAE" uuid="2da1f6ff-7e59-4bca-8589-3b2e7495c889"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[แม่]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="260" y="270" width="80" height="30" backcolor="#B0AEAE" uuid="7a7b85a6-12f7-4de0-a0c3-069498144e2b"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[พ่อ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="100" y="390" width="50" height="30" backcolor="#B0AEAE" uuid="7eff2a0c-7dc3-47d4-b03c-79858843b6d2"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ผล]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="150" y="140" width="30" height="30" backcolor="#B0AEAE" uuid="7719dcaf-bdba-4024-bc0c-475d5c6a4d34"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ลำดับ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="150" y="270" width="30" height="30" backcolor="#B0AEAE" uuid="e4b0718f-0bf8-4db8-9831-f5fbe3d6de3f"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ลำดับ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="180" y="390" width="80" height="30" backcolor="#B0AEAE" uuid="8a8678fe-7a27-4bc5-9c69-858579013666"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[โค]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="180" y="270" width="80" height="30" backcolor="#B0AEAE" uuid="d7e18d2f-c925-489e-876b-6548f0bab0bc"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[โค]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="560" y="270" width="90" height="30" backcolor="#B0AEAE" uuid="c3d58a26-80dc-4607-b8e1-1e92ce180d03"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ผู้พัฒนาพันธุ์]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="180" y="140" width="80" height="30" backcolor="#B0AEAE" uuid="f215f694-85e2-45b2-b698-3015b7bb53ed"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[โค]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="260" y="390" width="80" height="30" backcolor="#B0AEAE" uuid="5abba406-361e-4c1d-826d-4e831089077b"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[พ่อ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="500" y="140" width="60" height="30" backcolor="#B0AEAE" uuid="ac56aaea-c97b-4309-8956-98e203e6917d"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[อายุ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="420" y="140" width="80" height="30" backcolor="#B0AEAE" uuid="17d5def4-6b0b-452e-bfca-e0c793b0dae2"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[วันเกิด]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="650" y="140" width="90" height="30" backcolor="#B0AEAE" uuid="0a0b0989-e46e-483e-95b7-24a6ed5926e1"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[เจ้าของปัจจุบัน]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="150" y="390" width="30" height="30" backcolor="#B0AEAE" uuid="261ecfde-a82b-49be-8619-c400123d5764"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ลำดับ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="100" y="140" width="50" height="30" backcolor="#B0AEAE" uuid="4d9cfdac-e0bf-4ef1-bc1d-9b60b2018ebb"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ผล]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="650" y="270" width="90" height="30" backcolor="#B0AEAE" uuid="0b57eea6-daa7-4017-96c0-aaf519fba961"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[เจ้าของปัจจุบัน]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="340" y="270" width="80" height="30" backcolor="#B0AEAE" uuid="fbe6c334-d0fe-4c35-87d1-00c1cc3f51dc"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[แม่]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="100" y="270" width="50" height="30" backcolor="#B0AEAE" uuid="6cf4f50d-abf1-4bce-8b7b-85855027b287"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ผล]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="260" y="140" width="80" height="30" backcolor="#B0AEAE" uuid="9c30f4af-7b2d-4c06-a66f-4b9acb45d6ec"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[พ่อ]]></text>
+			</staticText>
+			<image scaleImage="FillFrame">
+				<reportElement x="670" y="10" width="120" height="80" uuid="0136a6df-9c57-494f-a00b-f7fbedf7b370"/>
+				<imageExpression><![CDATA["img/festivity/"+$F{logo}]]></imageExpression>
+			</image>
+			<line>
+				<reportElement x="100" y="80" width="510" height="1" uuid="2cc497a8-86d7-484d-b4ab-b500d97ab550"/>
+			</line>
+		</band>
+	</detail>
+</jasperReport>

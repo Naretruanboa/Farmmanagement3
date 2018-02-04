@@ -1,0 +1,63 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+   <%@ include file="/WEB-INF/includes.jsp"%>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body>
+<jsp:include page="menuHome2.jsp"/>
+<br>
+		<div class="container">
+		<div class="col-md-offset-3 col-md-6">
+<div class="panel panel-primary">
+		<div class="panel-heading">
+	        <h4 class="panel-title">ลืมรหัส</h4>
+	   	</div>
+		<div class="panel-body">
+		<form action="getAnswer" method="post">
+		  	<table class="table table-striped table-hover  table-bordered">
+		  	<tbody>
+		  		<c:forEach items="${userlist}" var="u">
+					<tr>
+						<th class="text-center">
+						ชื่อผู้ใช้งาน
+						</th>
+						<td class="text-center">
+						<input type="text" name="username" id="username" value="${u.username}" class="form-control text-center" readonly/>
+						</td>
+					</tr>
+					<tr>
+						<th class="text-center">
+						คำถาม
+						</th>
+						<td class="text-center">
+						<input type="text" name="question" id="question" value="${u.question}" class="form-control text-center" readonly/>
+						</td>
+					</tr>
+					<tr>
+						<th class="text-center">
+						คำตอบ
+						</th>
+						<td class="text-center">
+						<input type="text" name="answer" id="answer" class="form-control text-center" />
+						</td>
+					</tr>
+				</c:forEach>
+			</tbody>
+			</table>
+			<div class="text-center"><button type="submit" class="btn btn-success" id="ok">ตกลง</button></div>
+			<c:if test="${key!=null }">
+			<div class="text-center"><h6><font color="red">${key}</font></h6></div>
+			</c:if>
+		</form>
+		
+
+				</div>
+</div>
+</div>
+</div>
+		
+		
+</body>
+</html>

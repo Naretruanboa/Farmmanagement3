@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.2.0.final using JasperReports Library version 6.2.0  -->
+<!-- 2016-11-25T03:03:37 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="jasper_report_template" pageWidth="842" pageHeight="595" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="b40d3b77-5ed6-4823-8c41-cdbe58056ad3">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="path" class="java.lang.String"/>
+	<parameter name="ReportTitle" class="java.lang.String"/>
+	<parameter name="Author" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="name" class="java.lang.String">
+		<fieldDescription><![CDATA[name]]></fieldDescription>
+	</field>
+	<field name="age" class="java.lang.String">
+		<fieldDescription><![CDATA[age]]></fieldDescription>
+	</field>
+	<field name="standard" class="java.lang.String">
+		<fieldDescription><![CDATA[standard]]></fieldDescription>
+	</field>
+	<field name="logo" class="java.lang.String">
+		<fieldDescription><![CDATA[logo]]></fieldDescription>
+	</field>
+	<field name="datediff" class="java.lang.Integer">
+		<fieldDescription><![CDATA[datediff]]></fieldDescription>
+	</field>
+	<field name="father" class="java.lang.String"/>
+	<field name="mother" class="java.lang.String"/>
+	<field name="birthday" class="java.lang.String"/>
+	<field name="depv" class="java.lang.String"/>
+	<field name="owner" class="java.lang.String"/>
+	<field name="date" class="java.lang.String"/>
+	<field name="farmName" class="java.lang.String"/>
+	<field name="title" class="java.lang.String"/>
+	<sortField name="datediff"/>
+	<sortField name="standard" order="Descending"/>
+	<variable name="CountryNumber" class="java.lang.Integer" incrementType="Group" incrementGroup="CountryGroup" calculation="Count">
+		<variableExpression><![CDATA[Boolean.TRUE]]></variableExpression>
+	</variable>
+	<variable name="countNumber" class="java.lang.Integer" calculation="Count">
+		<variableExpression><![CDATA[Boolean.TRUE]]></variableExpression>
+	</variable>
+	<group name="CountryGroup" minHeightToStartNewPage="60">
+		<groupExpression><![CDATA[$F{standard}]]></groupExpression>
+		<groupHeader>
+			<band height="45" splitType="Stretch">
+				<property name="local_mesure_unitheight" value="pixel"/>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<staticText>
+					<reportElement mode="Opaque" x="160" y="20" width="70" height="25" backcolor="#B0AEAE" uuid="76d78bef-7bb9-452b-b5f8-db1fe21e85cd">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH Niramit AS" size="14" isBold="true"/>
+					</textElement>
+					<text><![CDATA[โค]]></text>
+				</staticText>
+				<textField evaluationTime="Group" evaluationGroup="CountryGroup" bookmarkLevel="1">
+					<reportElement mode="Transparent" x="70" y="0" width="510" height="20" backcolor="#F2E4E4" uuid="5ca23394-13f1-4ead-9a5d-b329c62950a0"/>
+					<box leftPadding="10">
+						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement verticalAlignment="Middle">
+						<font fontName="TH Niramit AS" size="14" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[" "+String.valueOf($V{CountryNumber})+"."+String.valueOf($F{standard})]]></textFieldExpression>
+					<anchorNameExpression><![CDATA[String.valueOf($F{name})]]></anchorNameExpression>
+				</textField>
+				<staticText>
+					<reportElement mode="Opaque" x="450" y="20" width="90" height="25" backcolor="#B0AEAE" uuid="acd624bd-79ce-49f5-a04f-f528be1f1827">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH Niramit AS" size="14" isBold="true"/>
+					</textElement>
+					<text><![CDATA[อายุ]]></text>
+				</staticText>
+				<staticText>
+					<reportElement mode="Opaque" x="70" y="20" width="50" height="25" backcolor="#B0AEAE" uuid="fc6fb00c-d408-4219-bb5b-56a6ffcc1c55">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH Niramit AS" size="14" isBold="true"/>
+					</textElement>
+					<text><![CDATA[ผล]]></text>
+				</staticText>
+				<staticText>
+					<reportElement mode="Opaque" x="230" y="20" width="70" height="25" backcolor="#B0AEAE" uuid="3924e40f-8270-42a2-b05b-dcb85677701f">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH Niramit AS" size="14" isBold="true"/>
+					</textElement>
+					<text><![CDATA[พ่อ]]></text>
+				</staticText>
+				<staticText>
+					<reportElement mode="Opaque" x="300" y="20" width="70" height="25" backcolor="#B0AEAE" uuid="54d6d2ab-d5bb-46c7-b7f1-9939ebcecf07">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH Niramit AS" size="14" isBold="true"/>
+					</textElement>
+					<text><![CDATA[แม่]]></text>
+				</staticText>
+				<staticText>
+					<reportElement mode="Opaque" x="120" y="20" width="40" height="25" backcolor="#B0AEAE" uuid="5ceadd6d-8d91-49a4-8548-ccfd66e36c91">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH Niramit AS" size="14" isBold="true"/>
+					</textElement>
+					<text><![CDATA[ลำดับ]]></text>
+				</staticText>
+				<staticText>
+					<reportElement mode="Opaque" x="370" y="20" width="80" height="25" backcolor="#B0AEAE" uuid="550a9fed-1b3a-4986-84d7-c8d2037ca00b">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH Niramit AS" size="14" isBold="true"/>
+					</textElement>
+					<text><![CDATA[วันเกิด]]></text>
+				</staticText>
+				<staticText>
+					<reportElement mode="Opaque" x="630" y="20" width="100" height="25" backcolor="#B0AEAE" uuid="48bfc7e1-6881-49ac-808e-a5c9335a5b41">
+						<property name="local_mesure_unitheight" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH Niramit AS" size="14" isBold="true"/>
+					</textElement>
+					<text><![CDATA[เจ้าของปัจจุบัน]]></text>
+				</staticText>
+				<staticText>
+					<reportElement mode="Opaque" x="540" y="20" width="90" height="25" backcolor="#B0AEAE" uuid="b4bfc99c-21c0-440c-957c-6c4440291209">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="local_mesure_unitheight" value="pixel"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+						<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="TH Niramit AS" size="14" isBold="true"/>
+					</textElement>
+					<text><![CDATA[ผู้พัฒนาพันธุ์]]></text>
+				</staticText>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band height="20" splitType="Stretch">
+				<property name="local_mesure_unitheight" value="pixel"/>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</band>
+		</groupFooter>
+	</group>
+	<pageHeader>
+		<band height="100">
+			<property name="local_mesure_unitheight" value="pixel"/>
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<line>
+				<reportElement x="100" y="89" width="510" height="1" uuid="db29bc98-e53d-477a-bf9d-8772826f6c4f"/>
+			</line>
+			<image scaleImage="RetainShape">
+				<reportElement x="0" y="0" width="802" height="100" uuid="1b8cf0f5-2fc6-4bcb-985d-37a2a4659b83"/>
+				<imageExpression><![CDATA["img/form_festivity/h.png"]]></imageExpression>
+			</image>
+			<image scaleImage="FillFrame">
+				<reportElement x="670" y="10" width="120" height="80" uuid="cda48b43-aad1-4b73-ab15-ffc6ca3c73a2"/>
+				<imageExpression><![CDATA[$P{path}+"\\"+$F{logo}]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement mode="Transparent" x="0" y="38" width="802" height="40" forecolor="#AB0913" uuid="87fde930-d2ba-4e4d-ad75-3940716b901b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="0" y="0" width="802" height="50" forecolor="#E1E80E" uuid="c088f045-ee42-4dd9-a198-e66951d18fef"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="40" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{title}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="5" y="65" width="802" height="28" forecolor="#AB0913" uuid="24ab7333-41f9-41cc-ac51-13502cf5b0cb"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{farmName}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="25" splitType="Stretch">
+			<property name="local_mesure_unitheight" value="pixel"/>
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<textField>
+				<reportElement x="160" y="0" width="70" height="25" uuid="4649807b-d12d-41c2-8022-127e31cb0ae3"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="0" width="90" height="25" uuid="3faf7162-587f-4e0b-8975-b8080b7ecb0c"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{age}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="0" width="40" height="25" uuid="0f16e42d-1e31-4e2f-a178-62f3832c4632"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[String.valueOf($V{CountryGroup_COUNT})]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="230" y="0" width="70" height="25" uuid="dffcb8db-fd77-4e85-ac36-c69b95e99558"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{father}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="0" width="70" height="25" uuid="ce18301c-826d-42d3-a8d2-aab8b1a6483c"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{mother}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="370" y="0" width="80" height="25" uuid="ac9458bd-dad3-4b7f-9aa0-338f65ce2a90"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{birthday}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="540" y="0" width="90" height="25" uuid="08f29aa4-65c1-4098-ae32-67c0cf13714b"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{depv}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="630" y="0" width="100" height="25" uuid="2fa21abf-d33e-4ab8-8155-462d1a5a20f6"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{owner}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="70" y="0" width="50" height="25" uuid="345fbd90-87c6-4efa-ab81-191bc02babcb"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14"/>
+				</textElement>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="100">
+			<property name="local_mesure_unitheight" value="pixel"/>
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<image scaleImage="RetainShape" hAlign="Right">
+				<reportElement x="0" y="0" width="802" height="100" uuid="d5e4f5ce-79f3-437c-bc92-06aa0e14073e"/>
+				<imageExpression><![CDATA["img/form_festivity/f.png"]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="0" y="78" width="802" height="18" uuid="1b0ea424-7ff3-4457-ab85-b7e6e762f80a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="70" y="53" width="210" height="30" uuid="21aa008f-9260-42ee-bb16-7ce326177c37"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[................................................................]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="470" y="30" width="210" height="30" uuid="2d243a0e-a989-4890-b089-b3411a108b46"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}==1 ? "รองชนะเลิศลูกโค" : 
+											$V{PAGE_NUMBER}==2 ? "รองชนะเลิศโคหนุ่ม" :
+											$V{PAGE_NUMBER}==3 ? "รองชนะเลิศโครุ่น" :
+											"รองชนะเลิศโคเต็มวัย"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="470" y="53" width="210" height="30" uuid="3b48661e-5732-4999-a585-33ccd18de4bf"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[................................................................]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="70" y="30" width="210" height="30" uuid="e66f47a2-91de-429f-83ed-cca661d0f2a5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}==1 ? "ชนะเลิศลูกโค" : 
+											$V{PAGE_NUMBER}==2 ? "ชนะเลิศโคหนุ่ม" :
+											$V{PAGE_NUMBER}==3 ? "ชนะเลิศโครุ่น" :
+											"ชนะเลิศโคเต็มวัย"]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <!DOCTYPE hibernate-configuration SYSTEM "classpath://org/hibernate/hibernate-configuration-3.0.dtd"> -->
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory name="farmmanagement3">
+        <!-- <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.password">jsp2016</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost/farmmanagement3</property>
+        <property name="hibernate.connection.username">jspuser</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property> -->
+    <mapping class="farm3.spring.model.Alert"></mapping>
+    <mapping class="farm3.spring.model.AlertStorehouse"/>
+    <mapping class="farm3.spring.model.Bill"/>
+    <mapping class="farm3.spring.model.Breed"/>
+    <mapping class="farm3.spring.model.Breeding"/>
+    <mapping class="farm3.spring.model.Bucket"/>
+    <mapping class="farm3.spring.model.CableDisease"/>
+    <mapping class="farm3.spring.model.Cattle"/>
+    <mapping class="farm3.spring.model.CattleDetail"/>
+    <mapping class="farm3.spring.model.CattleFatten"/>
+    <mapping class="farm3.spring.model.CattleNutrient"/>
+    <mapping class="farm3.spring.model.CattleShow"/>
+    <mapping class="farm3.spring.model.CattleStamp"/>
+    <mapping class="farm3.spring.model.CattleStrain"/>
+    <mapping class="farm3.spring.model.CattleWean"/>
+    <mapping class="farm3.spring.model.CattleYear"/>
+    <mapping class="farm3.spring.model.Color"/>
+    <mapping class="farm3.spring.model.CountBreed"/>
+    <mapping class="farm3.spring.model.Disease"/>
+    <mapping class="farm3.spring.model.Farm"/>
+    <mapping class="farm3.spring.model.FattenList"/>
+    <mapping class="farm3.spring.model.Festivity"/>
+    <mapping class="farm3.spring.model.FestivityFattenHistory"/>
+    <mapping class="farm3.spring.model.FestivityShowHistory"/>
+    <mapping class="farm3.spring.model.FestivityStrainHistory"/>
+    <mapping class="farm3.spring.model.FormList"/>
+    <mapping class="farm3.spring.model.FormulaRecord"/>
+    <mapping class="farm3.spring.model.FormulaRecord2"/>
+    <mapping class="farm3.spring.model.Gene"/>
+    <mapping class="farm3.spring.model.GroupCattle"/>
+    <mapping class="farm3.spring.model.GroupMedicine"/>
+    <mapping class="farm3.spring.model.HornDetering"/>
+    <mapping class="farm3.spring.model.Medicine"/>
+    <mapping class="farm3.spring.model.MedicineImport"/>
+    <mapping class="farm3.spring.model.MedicineOrder"/>
+    <mapping class="farm3.spring.model.MedicineRelease"/>
+    <mapping class="farm3.spring.model.Member"/>
+    <mapping class="farm3.spring.model.Misscarry"/>
+    <mapping class="farm3.spring.model.Pay"/>
+    <mapping class="farm3.spring.model.Pregnant"/>
+    <mapping class="farm3.spring.model.Privilege"/>
+    <mapping class="farm3.spring.model.RawMaterial"/>
+    <mapping class="farm3.spring.model.RawMaterialFormula"/>
+    <mapping class="farm3.spring.model.RawMaterialPrice"/>
+    <mapping class="farm3.spring.model.RawMaterialImport"/>
+    <mapping class="farm3.spring.model.RawMaterialNutrient"/>
+    <mapping class="farm3.spring.model.RawMaterialOrder"/>
+    <mapping class="farm3.spring.model.RawMaterialRelease"/>
+    <mapping class="farm3.spring.model.Report"/>
+    <mapping class="farm3.spring.model.Semen"/>
+    <mapping class="farm3.spring.model.SemenImport"/>
+    <mapping class="farm3.spring.model.SemenOrder"/>
+    <mapping class="farm3.spring.model.SemenRelease"/>
+    <mapping class="farm3.spring.model.Sex"/>
+    <mapping class="farm3.spring.model.Stall"/>
+    <mapping class="farm3.spring.model.Standard"/>
+    <mapping class="farm3.spring.model.Status"/>
+    <mapping class="farm3.spring.model.StatusAlert"/>
+    <mapping class="farm3.spring.model.StatusBill"/>
+    <mapping class="farm3.spring.model.StatusBorn"/>
+    <mapping class="farm3.spring.model.StatusBreed"/>
+    <mapping class="farm3.spring.model.StatusCattle"/>
+    <mapping class="farm3.spring.model.StatusDisease"/>
+    <mapping class="farm3.spring.model.StatusMedicine"/>
+    <mapping class="farm3.spring.model.StatusPregnant"/>
+    <mapping class="farm3.spring.model.StatusTreat"/>
+    <mapping class="farm3.spring.model.Sync"/>
+    <mapping class="farm3.spring.model.Synchronize"/>
+    <mapping class="farm3.spring.model.Tool"/>
+    <mapping class="farm3.spring.model.ToolBorrow"/>
+    <mapping class="farm3.spring.model.ToolBroken"/>
+    <mapping class="farm3.spring.model.ToolImport"/>
+    <mapping class="farm3.spring.model.ToolOrder"/>
+    <mapping class="farm3.spring.model.ToolRelease"/>
+    <mapping class="farm3.spring.model.TreatmentHistory"/>
+    <mapping class="farm3.spring.model.Type"/>
+    <mapping class="farm3.spring.model.TypeAlert"/>
+    <mapping class="farm3.spring.model.TypeBill"/>
+    <mapping class="farm3.spring.model.TypeBucket"/>
+    <mapping class="farm3.spring.model.TypeCattle"/>
+    <mapping class="farm3.spring.model.TypeCow"/>
+    <mapping class="farm3.spring.model.TypeFormula"/>
+    <mapping class="farm3.spring.model.TypeHorn"/>
+    <mapping class="farm3.spring.model.TypeMaterial"/>
+    <mapping class="farm3.spring.model.TypeNutrient"/>
+    <mapping class="farm3.spring.model.TypeSync"/>
+    <mapping class="farm3.spring.model.TypeTool"/>
+    <mapping class="farm3.spring.model.UnitMedicine"/>
+    <mapping class="farm3.spring.model.UnitNutrient"/>
+    <mapping class="farm3.spring.model.UnitRawMaterial"/>
+    <mapping class="farm3.spring.model.UnitTool"/>
+    <mapping class="farm3.spring.model.Worktogether"/>
+    <mapping class="farm3.spring.model.CattlePedigree"></mapping>
+   <!--  <mapping class="farm3.spring.model.ClassCattle"></mapping> -->
+ 	<mapping class="farm3.spring.model.TypeHealth"></mapping>
+ 	<mapping class="farm3.spring.model.TypeDairy"/>
+ 	<mapping class="farm3.spring.model.MedicineHealth"/>
+ 
+    </session-factory> 
+    
+    
+</hibernate-configuration>

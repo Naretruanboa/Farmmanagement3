@@ -1,0 +1,178 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+        <%@ include file="/WEB-INF/includes.jsp"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="<c:url value="/resources/css/fileinput.css" />" media="all"
+	rel='stylesheet' type='text/css' />
+
+<link href="<c:url value="/resources/css/easy-autocomplete.min.css" />" rel='stylesheet' type='text/css' />
+<link href="<c:url value="/resources/css/easy-autocomplete.themes.min.css" />" rel='stylesheet' type='text/css' />
+<script src="<c:url value="/resources/js/jquery-1.10.2.js" />"></script>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+<script src="<c:url value="/resources/js/jquery.easy-autocomplete.min.js" />"></script>
+  <link rel="stylesheet" href="/resources/demos/style.css">
+
+<script src="<c:url value="/resources/js/clicktable.js" />"></script>
+<script src="<c:url value="/resources/js/fileinput.js" />"></script>
+<title>เหนี่ยวนำ</title>
+
+<script type="text/javascript">
+
+function show(str)
+{
+if (str=="")
+  {
+  document.getElementById("txtHint").innerHTML="";
+  return;
+  } 
+if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xmlhttp.onreadystatechange=function()
+  {
+  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    {
+    document.getElementById("txtHint").innerHTML=xmlhttp.responseText;
+    }
+  }
+xmlhttp.open("GET","getSynchroniz?q="+str,true);
+xmlhttp.send();
+}
+
+</script>
+
+</head>
+<body>
+<%@ include file="../menu.jsp"%><br><br>
+<%@ include file="../footer.jsp"%>
+<div id="content">
+<div class="container">
+			<div class="col-md-3">
+				<div class="jumbotron" style="background-color: rgb(218, 68, 83)"
+						align="center">
+						<p style="font-size: 28px; font-weight: 700; color: white;">ข้อมูลการเหนี่ยวนำ</p>
+				</div>	
+			</div>
+			<div class="row">
+				<hr>
+			</div><br><br>	
+			<div class="row form-group">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<span class="fa fa-list-alt fa-lg"></span> ข้อมูลการเหนี่ยวนำ</a>
+						</h4>
+					</div>				
+				
+					<div class="panel-body">
+						<form:form  method="POST" id="synchronize" commandName="synchronize">
+							<div class="row form-group">
+								<div class="col-md-6">
+									<fieldset><br>
+										<div class="row form-group">
+											<label class="col-md-offset-s col-md-3 control-lable"><font color="red">* </font> หมายเลขแม่พันธุ์</label>
+												<div class="col-md-6">
+							 						<div>
+														
+														<input id="momcatl" type="text" class="form-control" value="${syncId.cattle.num }" readonly style="background-color:#e4ecf7"/>
+																											
+							 						</div>																				
+													
+												</div>											
+										</div>		
+										
+										
+										 
+										<div class="row form-group">
+											<label class="col-md-offset-s col-md-3 control-label"><font color="red">* </font> ผู้บันทึก</label>
+												<div class="col-md-6">
+							 						<div>
+														<input id="fatcatl" type="text" class="form-control" value="${syncId.member.first }&nbsp;${syncId.member.last  }" readonly style="background-color:#e4ecf7"/> 
+							 					</div>											
+											</div>
+										</div>
+																												
+									</fieldset>
+								</div>
+								
+								<div class="col-md-6">
+									<fieldset><br>
+									
+										<div class="row form-group">
+											<label class="col-md-offset-s col-md-3 control-lable"><font color="red">* </font> โปรแกรมที่ใช้</label>
+												<div class="col-md-6">
+							 						<div>
+	
+														<input id="fatcatl" type="text" class="form-control" value="${syncId.typeSync.value}" readonly style="background-color:#e4ecf7"/> 
+														
+							 						</div>																				
+												</div>											
+										</div>	
+									
+										<div class="row form-group">
+											<label class="col-md-offset-s col-md-3 control-lable"><font color="red">* </font>วันทีี่เริ่มทำโปรแกรม</label>
+											<div class="col-md-6">
+												<input id="fatcatl" type="text" class="form-control" value="${syncId.dateSync}" readonly style="background-color:#e4ecf7"/>
+											</div>
+										</div>											
+									</fieldset>
+								</div>
+								
+			
+								<div id="txtHint"></div>
+															
+							</div>
+						</form:form>	
+								<div class="col-md-offset-8 col-md-6">
+									<a href=synchroniz_list><button type="button" class="btn btn-embossed btn-primary">
+									<i class="fa fa-arrow-left" aria-hidden="true"></i>&nbsp; ย้อนกลับ</button></a>
+								</div>	
+					</div>
+					
+				</div>
+			</div>	
+</div>
+</div>
+</body>
+
+<script type="text/javascript">
+
+	function cancel() {
+		location.reload();
+	} 
+	
+	// ยืนยันบันทึก
+	$(document).on('click','#add',function(e){
+	$.ajax({
+		url:"saveSynchroniz",
+		method:"POST",
+		data:$("#synchronize").serialize()
+	}).done(function(s){
+		swal({  title: "สำเร็จ",   
+			text: "บันทึกเรียบร้อยแล้ว!", 
+			type: "success",   
+			showCancelButton: false,   
+			confirmButtonText: "OK!",   
+			closeOnConfirm: false }, 
+			
+			function(){   
+				location.reload(); 
+				});
+	}).fail(function() {
+		swal("ผิดพลาด", "ไม่สามารถบันทึกได้!", "error");
+	}); 
+	e.preventDefault();
+});
+	
+</script>
+
+</html>

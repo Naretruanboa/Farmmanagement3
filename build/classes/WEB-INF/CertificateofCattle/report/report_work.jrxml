@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.0.4.final using JasperReports Library version 6.0.4  -->
+<!-- 2015-07-23T18:10:21 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report_work" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="070c06f0-b366-4627-aaad-9a7ab7140e33">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="46" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="8" width="555" height="30" uuid="b224237b-fb6a-4a20-bbbb-64988b924083"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[รายงานการประกวดโค]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="141" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="555" height="140" uuid="f88f9a15-6640-4416-aed2-f231ad336344"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="20" y="10" width="535" height="30" uuid="e5a56c94-5607-489d-8004-7b60fd175d15"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[จำนวนโคที่เข้าร่วม                                             ตัว  น้ำหนักเฉลี่ย                                     กิโลกรัม]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="19" y="30" width="536" height="30" uuid="1c7cb8ee-19d8-45ee-b9bd-b0848dd422bf"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[จำนวนโครุ่น CLAF มี                                           ตัว  น้ำหนักเฉลี่ย                                     กิโลกรัม]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="19" y="50" width="536" height="30" uuid="e045c163-545b-44c6-81b7-7140ee0c783b"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[จำนวนโครุ่น INTERMEDIATE                                ตัว  น้ำหนักเฉลี่ย                                     กิโลกรัม]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="19" y="69" width="537" height="30" uuid="8d7475ec-6bbd-4d25-a551-70d84cad059c"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[จำนวนโครุ่น JUNIOR                                           ตัว  น้ำหนักเฉลี่ย                                     กิโลกรัม]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="19" y="87" width="536" height="30" uuid="82d12dac-4b4d-44a2-8e64-c7daf30be0e0"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[จำนวนโครุ่น SENIOR                                           ตัว  น้ำหนักเฉลี่ย                                     กิโลกรัม]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="159" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="30" width="555" height="30" uuid="bb0ecd2c-71fa-4387-82e5-ec6415baa371"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ผลการประกวด]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="70" width="280" height="30" uuid="f459d7f5-ea3a-473e-968c-f7b6381c09dc"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[เพศผู้]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="280" y="70" width="275" height="30" uuid="97b46139-aae2-48ea-a29b-23674b8cda75"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[เพศเมีย]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="100" width="140" height="30" uuid="c3215765-98c5-47bf-9e0e-31bf84ee4334"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[เพศผู้]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="140" y="100" width="140" height="30" uuid="dcafb13e-0734-46e3-b36e-60345bde9dde"/>
+				<box>
+					<topPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.1" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[เพศผู้]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

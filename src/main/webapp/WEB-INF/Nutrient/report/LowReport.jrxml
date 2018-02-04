@@ -1,0 +1,899 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.0.final using JasperReports Library version 6.3.0  -->
+<!-- 2016-11-03T11:16:06 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ReportStock" pageWidth="595" pageHeight="842" columnWidth="515" leftMargin="40" rightMargin="40" topMargin="70" bottomMargin="70" uuid="6d2923c5-da17-4686-8c55-346a754103ae">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="cm"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="cm"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<parameter name="TypeReport" class="java.lang.String"/>
+	<parameter name="nameThai" class="java.lang.String"/>
+	<parameter name="address" class="java.lang.String"/>
+	<parameter name="User" class="java.lang.String"/>
+	<parameter name="logo" class="java.lang.String"/>
+	<parameter name="Date" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="i" class="java.lang.Integer"/>
+	<field name="rawname" class="java.lang.String"/>
+	<field name="rawvalue" class="java.lang.Float"/>
+	<field name="rawprice" class="java.lang.Float"/>
+	<field name="forsumweight" class="java.lang.Float"/>
+	<field name="forcost" class="java.lang.Float"/>
+	<field name="fordm2" class="java.lang.Float"/>
+	<field name="forcp2" class="java.lang.Float"/>
+	<field name="fortdn2" class="java.lang.Float"/>
+	<field name="forndf2" class="java.lang.Float"/>
+	<field name="forvita2" class="java.lang.Float"/>
+	<field name="forvite2" class="java.lang.Float"/>
+	<field name="fordm1" class="java.lang.Float"/>
+	<field name="forcp1" class="java.lang.Float"/>
+	<field name="fortdn1" class="java.lang.Float"/>
+	<field name="forndf1" class="java.lang.Float"/>
+	<field name="forvita1" class="java.lang.Float"/>
+	<field name="forvite1" class="java.lang.Float"/>
+	<field name="foradf1" class="java.lang.Float"/>
+	<field name="foradf2" class="java.lang.Float"/>
+	<field name="forca1" class="java.lang.Float"/>
+	<field name="forca2" class="java.lang.Float"/>
+	<field name="forp1" class="java.lang.Float"/>
+	<field name="forp2" class="java.lang.Float"/>
+	<field name="fornfc1" class="java.lang.Float"/>
+	<field name="fornfc2" class="java.lang.Float"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="450" splitType="Stretch">
+			<textField>
+				<reportElement x="115" y="50" width="400" height="26" uuid="f3c218e7-05fb-4892-b8a6-8fc3aff2b4f2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="19" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{TypeReport}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="115" y="0" width="400" height="30" uuid="ed56aaea-4042-4fdb-8b49-ebce13d2285c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="27" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{nameThai}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="115" y="30" width="400" height="20" uuid="70088bb5-1bc6-4a26-a502-203e81bf91f4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="15"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{address}]]></textFieldExpression>
+			</textField>
+			<image hAlign="Center" vAlign="Middle">
+				<reportElement x="19" y="0" width="81" height="81" uuid="e22fa686-dd5c-4e5c-8f80-d5fc1a65e633"/>
+				<imageExpression><![CDATA[$P{logo}]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="305" y="88" width="210" height="26" uuid="86056256-d335-4250-828b-772c8018b1ae"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Date}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="91" width="239" height="23" uuid="d260cfae-6117-493b-a4ed-c892c4873ce6"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[หมวดหมู่ : คุณค่าทางโภชะของโค]]></text>
+			</staticText>
+			<frame>
+				<reportElement positionType="FixRelativeToBottom" mode="Opaque" x="0" y="119" width="515" height="3" backcolor="#000000" uuid="e55ccc92-25a0-4c44-8d3c-602fffd518fb">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+			</frame>
+			<frame>
+				<reportElement mode="Opaque" x="0" y="150" width="515" height="1" backcolor="#000000" uuid="2261b69e-fa04-4618-b05e-aee90ea8f9f6">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+			</frame>
+			<staticText>
+				<reportElement x="16" y="124" width="204" height="21" uuid="8070412b-9279-4343-a521-07ddf820384f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ผลลัพธ์การคำนวณ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="291" y="125" width="211" height="21" uuid="cf9de812-a18d-4f72-baaa-f68a8b9247b6"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[คุณค่าทางโภชนะที่ผู้ใช้กำหนด]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="291" y="153" width="111" height="18" uuid="e9f10db8-e5e3-4cde-8c7c-d5be48140202"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Bottom">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[โภชนะที่กำหนด]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="291" y="171" width="111" height="18" uuid="97b1e07a-3d8e-4812-9391-f758d9cca617"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Bottom">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[วัตถุดิบแห้ง (DM)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="291" y="189" width="111" height="18" uuid="fce58265-e89e-4a85-802f-336a1570923e"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Bottom">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[โปรตีน (CP)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="291" y="207" width="111" height="18" uuid="ae0c7c75-93b8-4dc9-afd6-a67648efd1a6"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Bottom">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[พลังงานรวม (TDN)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="291" y="225" width="111" height="18" uuid="21b0b23d-6b68-4d2f-8557-7b29c622e51e"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Bottom">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[เยื่อใย (NDF)]]></text>
+			</staticText>
+			
+			<staticText>
+				<reportElement x="291" y="243" width="111" height="18" />
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Bottom">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ (ADF) ]]></text>
+			</staticText>
+
+			<staticText>
+				<reportElement x="291" y="261" width="111" height="18" />
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Bottom">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ แคลเซียม (CA) ]]></text>
+			</staticText>
+
+			<staticText>
+				<reportElement x="291" y="279" width="111" height="18" />
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Bottom">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ ฟอสฟอรัส (P) ]]></text>
+			</staticText>
+
+			<staticText>
+				<reportElement x="291" y="297" width="111" height="18" />
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Bottom">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ แป้ง (NFC) ]]></text>
+			</staticText>
+
+			<staticText>
+				<reportElement x="291" y="315" width="111" height="18" uuid="768da60b-214f-47fe-afaf-c19e161a5313"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Bottom">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ วิตามิน เอ ]]></text>
+			</staticText>
+
+			<staticText>
+				<reportElement x="291" y="333" width="111" height="18" uuid="1e303c69-b570-42dd-ad5f-f9254b5a22ee"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Bottom">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ วิตามิน อี ]]></text>
+			</staticText>
+
+
+			<staticText>
+				<reportElement x="402" y="153" width="100" height="18" uuid="631b8790-b72e-4a33-949f-2a0bdaa15129"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ปริมาณ (%)]]></text>
+			</staticText>
+
+
+			<staticText>
+				<reportElement x="16" y="153" width="82" height="18" uuid="a7a4aee1-19fb-4fbb-856b-987c8e65c6f5">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Bottom">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[น้ำหนักรวม]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="16" y="171" width="82" height="18" uuid="e393e159-f4b5-46f9-a7e6-d8e7d9e44323"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Bottom">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ราคา]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="16" y="189" width="82" height="18" uuid="a335ff77-f2b2-40a1-a7b5-1f5bb43b4ea1"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Bottom">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[วัตถุดิบแห้ง (DM)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="16" y="207" width="82" height="18" uuid="691c323f-5018-42d7-96c3-8b7f2e2e538d"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Bottom">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[โปรตีน (CP)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="16" y="225" width="82" height="18" uuid="90313fb5-0d4b-482e-9966-872506727c22"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Bottom">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[พลังงานรวม (TDN)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="16" y="243" width="82" height="18" uuid="d5c1511c-84dc-4baa-aa36-6143ff283d07"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Bottom">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[เยื่อใย (NDF)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="16" y="261" width="111" height="18" />
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Bottom">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ (ADF) ]]></text>
+			</staticText>
+
+			<staticText>
+				<reportElement x="16" y="279" width="111" height="18" />
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Bottom">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ แคลเซียม (CA) ]]></text>
+			</staticText>
+
+			<staticText>
+				<reportElement x="16" y="297" width="111" height="18" />
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Bottom">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ ฟอสฟอรัส (P) ]]></text>
+			</staticText>
+
+			<staticText>
+				<reportElement x="16" y="315" width="111" height="18" />
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Bottom">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ แป้ง (NFC) ]]></text>
+			</staticText>
+
+			<staticText>
+				<reportElement x="16" y="333" width="82" height="18" uuid="4d745fd8-ea7a-43a3-9ecf-435460fa2ccd"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Bottom">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ วิตามิน เอ ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="16" y="351" width="82" height="18" uuid="8fa69779-28c7-4848-ae03-6cf8bd9f3d55"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Bottom">
+					<font fontName="TH Niramit AS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ วิตามิน อี ]]></text>
+			</staticText>
+
+
+			<staticText>
+				<reportElement x="152" y="153" width="90" height="18" uuid="9a7b9c34-52b7-4354-8b2a-8af52f243b7c"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Bottom">
+					<font fontName="TH Niramit AS" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[    กิโลกรัม]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="152" y="171" width="90" height="18" uuid="03ada127-9f65-41e6-9d05-a456b5fac10b"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Bottom">
+					<font fontName="TH Niramit AS" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[    บาท/กิโลกรัม]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="152" y="189" width="90" height="18" uuid="9d079227-7575-4794-9c85-608602fd8d8d"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Bottom">
+					<font fontName="TH Niramit AS" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[    เปอร์เซ็นต์]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="152" y="207" width="90" height="18" uuid="23883597-159d-41fe-9614-7f299f65c66f"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Bottom">
+					<font fontName="TH Niramit AS" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[    เปอร์เซ็นต์]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="152" y="225" width="90" height="18" uuid="b55837c4-61c4-49d9-8351-f6ff16ac3c2d"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Bottom">
+					<font fontName="TH Niramit AS" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[    เปอร์เซ็นต์]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="152" y="243" width="90" height="18" uuid="48e6fa5f-78e4-4184-a9f9-9cf4c523f8c1"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Bottom">
+					<font fontName="TH Niramit AS" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[    เปอร์เซ็นต์]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="152" y="261" width="90" height="18" uuid="90c9aeb2-1f59-4cc1-a46c-adc0b684d479"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Bottom">
+					<font fontName="TH Niramit AS" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[    เปอร์เซ็นต์]]></text>
+			</staticText>
+			
+			<staticText>
+				<reportElement x="152" y="279" width="90" height="18" uuid="a72351c8-9466-4ae7-bf59-3cff5862ec41">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Bottom">
+					<font fontName="TH Niramit AS" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[    เปอร์เซ็นต์]]></text>
+			</staticText>
+
+			<staticText>
+				<reportElement x="152" y="297" width="90" height="18">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Bottom">
+					<font fontName="TH Niramit AS" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[    เปอร์เซ็นต์]]></text>
+			</staticText>
+
+			<staticText>
+				<reportElement x="152" y="315" width="90" height="18">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Bottom">
+					<font fontName="TH Niramit AS" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[    เปอร์เซ็นต์]]></text>
+			</staticText>
+
+			<staticText>
+				<reportElement x="152" y="333" width="90" height="18">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Bottom">
+					<font fontName="TH Niramit AS" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[    เปอร์เซ็นต์]]></text>
+			</staticText>
+
+			<staticText>
+				<reportElement x="152" y="351" width="90" height="18">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Bottom">
+					<font fontName="TH Niramit AS" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[    เปอร์เซ็นต์]]></text>
+			</staticText>
+
+			
+
+<!-- 
+			<frame>
+				<reportElement mode="Opaque" x="0" y="600" width="515" height="3" backcolor="#000000" uuid="e9a1aed7-9afb-48b7-8fa9-37090de3e74a">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+			</frame> 
+
+			 <frame>
+				<reportElement mode="Opaque" x="0" y="531" width="515" height="1" backcolor="#000000" uuid="87b6283f-b4a4-41de-abc1-a99be79c0f82">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+			</frame>
+
+			<frame>
+				<reportElement mode="Opaque" x="0" y="535" width="515" height="1" backcolor="#000000" uuid="b3dc36ba-478f-42a9-b62b-f45c1dfc0c1a">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+			</frame>  --> 
+
+
+			 <textField>
+				<reportElement x="98" y="153" width="54" height="18" uuid="463cd4a8-b3d0-47f4-990d-e45b89047d70"/>
+				<textElement textAlignment="Right" verticalAlignment="Bottom">
+					<font fontName="TH Niramit AS" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{forsumweight}]]></textFieldExpression>
+			</textField>
+		
+			<textField>
+				<reportElement x="98" y="171" width="54" height="18" uuid="437751fc-4dc2-48ed-8ec3-ca23a49976e8"/>
+				<textElement textAlignment="Right" verticalAlignment="Bottom">
+					<font fontName="TH Niramit AS" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{forcost}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="98" y="189" width="54" height="18" uuid="1aade28a-7427-449a-af90-fe6e3052e532"/>
+				<textElement textAlignment="Right" verticalAlignment="Bottom">
+					<font fontName="TH Niramit AS" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fordm2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="98" y="207" width="54" height="18" uuid="8ca3a745-5e85-4d94-b537-08ee49fd2b3f"/>
+				<textElement textAlignment="Right" verticalAlignment="Bottom">
+					<font fontName="TH Niramit AS" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{forcp2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="98" y="225" width="54" height="18" uuid="fb50be60-97f4-4d2d-bf05-3b7053698292"/>
+				<textElement textAlignment="Right" verticalAlignment="Bottom">
+					<font fontName="TH Niramit AS" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fortdn2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="98" y="243" width="54" height="18" uuid="459509c7-7983-4442-99f5-3d89242f72f7"/>
+				<textElement textAlignment="Right" verticalAlignment="Bottom">
+					<font fontName="TH Niramit AS" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{forndf2}]]></textFieldExpression>
+			</textField>
+
+			<textField>
+				<reportElement x="98" y="261" width="54" height="18" />
+				<textElement textAlignment="Right" verticalAlignment="Bottom">
+					<font fontName="TH Niramit AS" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{foradf2}]]></textFieldExpression>
+			</textField>
+
+			<textField>
+				<reportElement x="98" y="279" width="54" height="18" />
+				<textElement textAlignment="Right" verticalAlignment="Bottom">
+					<font fontName="TH Niramit AS" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{forca2}]]></textFieldExpression>
+			</textField>
+
+			<textField>
+				<reportElement x="98" y="297" width="54" height="18" />
+				<textElement textAlignment="Right" verticalAlignment="Bottom">
+					<font fontName="TH Niramit AS" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{forp2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="98" y="315" width="54" height="18" />
+				<textElement textAlignment="Right" verticalAlignment="Bottom">
+					<font fontName="TH Niramit AS" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fornfc2}]]></textFieldExpression>
+			</textField>	
+			<textField>
+				<reportElement x="98" y="333" width="54" height="18" uuid="814f6564-5b12-4d49-bd04-231a042bebd8"/>
+				<textElement textAlignment="Right" verticalAlignment="Bottom">
+					<font fontName="TH Niramit AS" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{forvita2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="98" y="351" width="54" height="18" uuid="b54e87aa-6d3d-482a-84df-4187e7e99d26"/>
+				<textElement textAlignment="Right" verticalAlignment="Bottom">
+					<font fontName="TH Niramit AS" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{forvite2}]]></textFieldExpression>
+			</textField>
+
+
+			<textField>
+				<reportElement x="402" y="171" width="100" height="18" uuid="8c65df90-3a3c-45be-a32e-009eb9eca5ac"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="TH Niramit AS" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fordm1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="402" y="189" width="100" height="18" uuid="7ff2dbf4-5b42-438c-a3ad-d425399babce"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="TH Niramit AS" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{forcp1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="402" y="207" width="100" height="18" uuid="f2dcb80a-e355-4624-ad2f-3f37621a3570"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="TH Niramit AS" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fortdn1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="402" y="225" width="100" height="18" uuid="41276181-d25a-4b5f-8a7e-bf7e806b4f6d"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="TH Niramit AS" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{forndf1}]]></textFieldExpression>
+			</textField>
+			
+			
+
+			<textField>
+				<reportElement x="402" y="243" width="100" height="18"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="TH Niramit AS" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{foradf1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="402" y="261" width="100" height="18"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="TH Niramit AS" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{forca1}]]></textFieldExpression>
+			</textField>
+		
+
+			<textField>
+				<reportElement x="402" y="279" width="100" height="18"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="TH Niramit AS" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{forp1}]]></textFieldExpression>
+			</textField>
+			
+			<textField>
+				<reportElement x="402" y="297" width="100" height="18"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="TH Niramit AS" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fornfc1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="402" y="315" width="100" height="18" uuid="c6892d33-478c-4c88-8be3-6f2d5d130213"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="TH Niramit AS" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{forvita1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="402" y="333" width="100" height="18" uuid="9d2cd221-1f38-449a-a299-05f7e07b0cd6"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="TH Niramit AS" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{forvite1}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="1" y="420" width="239" height="23" uuid="247978ee-0d20-4fb7-a6cd-23034a07ef74"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[หมวดหมู่ : สูตรอาหาร]]></text>
+			</staticText> 
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="32" splitType="Stretch">
+			<staticText>
+				<reportElement x="17" y="8" width="52" height="23" uuid="a3fbdacb-9036-42c6-b5c7-fc3c1f814579"/>
+				<textElement textAlignment="Center">
+					<font fontName="TH Niramit AS" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ลำดับที่]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="401" y="8" width="100" height="23" uuid="75fe068b-ae96-41b4-a719-172df99ae61f"/>
+				<textElement textAlignment="Center" verticalAlignment="Top" markup="html">
+					<font fontName="TH Niramit AS" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ราคาวัตถุดิบ (บาท)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="264" y="8" width="100" height="23" uuid="2a69a9c6-f75b-4bb2-b8f1-0a27055fee95"/>
+				<textElement textAlignment="Center">
+					<font fontName="TH Niramit AS" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[จำนวนวัตถุดิบ (กก.)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="94" y="8" width="100" height="23" uuid="e0414167-629c-403a-8aaf-32ee75600580"/>
+				<textElement>
+					<font fontName="TH Niramit AS" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ชื่อวัตถุดิบ]]></text>
+			</staticText> 
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="27" splitType="Stretch">
+			<textField>
+				<reportElement x="17" y="3" width="52" height="20" uuid="0de70126-e056-4ed1-950f-895a3d66f2b3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{i}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="94" y="3" width="162" height="20" uuid="f3ac88c5-a227-48de-b799-2dc57c710054"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{rawname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="264" y="3" width="100" height="20" uuid="82b9b4b1-1465-45dc-ab55-128b1029969a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{rawvalue}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="401" y="3" width="100" height="20" uuid="db9e6971-ea34-4136-a047-7eae4ba762ad"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="TH Niramit AS" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{rawprice}]]></textFieldExpression>
+			</textField> 
+		</band>
+	</detail>
+	<summary>
+		<band height="110" splitType="Stretch">
+			<textField>
+				<reportElement x="330" y="0" width="184" height="110" uuid="24fe9f21-85bb-4647-a25d-964f9e354083"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="TH Niramit AS" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{User}]]></textFieldExpression>
+			</textField> 
+		</band>
+	</summary>
+</jasperReport>
