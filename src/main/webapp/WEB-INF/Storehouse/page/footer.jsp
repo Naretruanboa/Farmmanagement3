@@ -7,7 +7,7 @@
 	<div class="container">
 		<div class="col-md-6" align="left">
 				<div class="row form-inline">
-						<span style="color: white;font-size: 16px;">Copyright ©2016</span>
+						<span style="color: white;font-size: 16px;">Copyright ©2017</span>
 						<span style="color: white;font-size: 18px;"> | </span>
 						<a href="development" target="_blank" style="font-size: 16px;">Development Team</a>	
 						<span style="color: white;font-size: 18px;"> | </span>

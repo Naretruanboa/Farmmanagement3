@@ -110,6 +110,21 @@
 									<input name="import_" class="form-control"  id="import" type="text"/>
 								</div>
 							</div>
+							<div class="row form-group">
+								<label class="col-md-offset-2 col-md-3 control-label"><font style="color: red;">* </font>ราคารวม</label>
+								<div class="form-inline">
+									<div class="input-group">
+										<input type="text" class="form-control" id="distanceDiscontinued" size="14" style="height: 30px " />
+										<span class="input-group-addon" style="border-radius: 0px 10px 10px 0px;">บาท</span>
+									</div>
+								</div>
+							</div>
+							<div class="row form-group">
+								<label  class="col-md-offset-2 col-md-3 control-label"><font color="red">*</font>ลอต</label>
+								<div class="col-md-6">
+									<input  type="number" class="form-control"/>
+								</div>
+							</div>
 							<input name="place" type="hidden" rows="2" cols="45" class="form-control" id="place" >
 					</form>
 						</div>

@@ -14,7 +14,7 @@ int i=1+a;
 				        	<td>${medicine.groupMedicine.value }</td>	
 				        	<td>${medicine.quantity }</td>	
 				        	<td>${medicine.unitMedicine.value }</td>	
-				        	<td>${medicine.place }</td>		
+				        	<td>${medicine.place }</td>					        		
 				        	<%-- <td>
 				   			<form:form action="detail_medicine?id=${medicine.id}" method="POST" commandName="show">
 		

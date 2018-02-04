@@ -35,14 +35,14 @@
 						</c:forEach>
 					<div class="col-md-6"> <!-- คอลัมแรก -->
 						<div class="row form-group">
-							<label class="col-md-offset-0 col-md-3 control-label"><font color="red">*</font> วันที่นำเข้า</label>
+							<label class="col-md-offset-1 col-md-3 control-label"><font color="red">*</font> วันที่นำเข้า</label>
 							<div class="col-md-6">
 							 	<input id="day" name="day" value="${day }" class="form-control" type="date">											
 							</div>
 						</div>	
 						<div class="row form-group">
 		
-								<label class="col-md-offset-0 col-md-3 control-label"><font color="red">*</font> ชื่อยา</label>
+								<label class="col-md-offset-1 col-md-3 control-label"><font color="red">*</font> ชื่อยา</label>
 								<div class="col-md-6">
 									<select class="form-control Medicineid" id="Medicineid" name="Medicineid" onchange="Listunit();">
 									 	<option value="0">เลือกชื่อยา (ทางการค้า)</option>
@@ -60,21 +60,21 @@
 						</div>
 						<div class="row form-group">
 		
-								<label class="col-md-offset-0 col-md-3 control-label">จำนวนคงคลัง</label>
+								<label class="col-md-offset-1 col-md-3 control-label">จำนวนคงคลัง</label>
 								<div class="col-md-6">
 									<input name="beforeQuantity" id="oquantity" type="text" class="form-control" readonly="true">
 								</div>
 						</div>
 						<div class="row form-group">
 		
-								<label class="col-md-offset-0 col-md-3 control-label"><font color="red">*</font> จำนวนที่นำเข้า</label>
+								<label class="col-md-offset-1 col-md-3 control-label"><font color="red">*</font> จำนวนที่นำเข้า</label>
 								<div class="col-md-6">
 									<input name="quantity" id="quantity" type="number" class="form-control" >
 								</div>
 						</div>
 						<div class="row form-group">
 		
-								<label class="col-md-offset-0 col-md-3 control-label"><font color="red">*</font> หน่วย</label>
+								<label class="col-md-offset-1 col-md-3 control-label"><font color="red">*</font> หน่วย</label>
 								<div class="col-md-6">
 									<input id="unitmed" type="text" class="form-control" readonly="true">
 								</div>
@@ -98,6 +98,21 @@
 							<label  class="col-md-offset-1 col-md-3 control-label"> นำเข้าจาก</label>
 							<div class="col-md-6">
 								<input name="import" id="import" class="form-control" type="text">
+							</div>
+						</div>
+						<div class="row form-group">
+							<label  class="col-md-offset-1 col-md-3 control-label"><font style="color: red;">* </font> ราคารวม</label>
+							<div class="col-md-6">
+								<div class="input-group">
+									<input name="price" id="price" class="form-control" type="number">
+									<span class="input-group-addon" style="border-radius: 0px 10px 10px 0px;">บาท</span>
+								</div>
+							</div>
+						</div>
+						<div class="row form-group">
+							<label  class="col-md-offset-1 col-md-3 control-label"><font color="red">*</font>ลอต</label>
+							<div class="col-md-6">
+								<input  type="number" class="form-control" id="lot"/>
 							</div>
 						</div>
 						<input name="place" type="hidden" rows="2" cols="45" class="form-control" id="place" >

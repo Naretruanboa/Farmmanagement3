@@ -12,7 +12,7 @@ int i=1+a;
 										<td>${medicine.tradeName}</td>
 										<td>${medicine.commonName}</td>	
 										<td>${medicine.groupMedicine.value}</td>
-										<td>${medicine.properties}</td>	
+										<td>${medicine.place}</td>	
 										
 										<td>
 										<form:form action="detail_medicine" method="POST" commandName="show">

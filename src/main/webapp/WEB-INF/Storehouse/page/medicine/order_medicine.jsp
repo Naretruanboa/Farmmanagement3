@@ -37,14 +37,14 @@
 					
 					<div class="col-md-6"> <!-- คอลัมแรก -->
 						<div class="row form-group">
-							<label class="col-md-offset-0 col-md-3 control-label"><font color="red">*</font> วันที่สั่งซื้อ</label>
+							<label class="col-md-offset-1 col-md-3 control-label"><font color="red">*</font> วันที่สั่งซื้อ</label>
 							<div class="col-md-6">
 							 	<form:input path="day" value="${day }" id="day" name="day" type="date" class="form-control" />											
 							</div>
 						</div>	
 						<div class="row form-group">
 		
-								<label class="col-md-offset-0 col-md-3 control-label"><font color="red">*</font> ชื่อยา</label>
+								<label class="col-md-offset-1 col-md-3 control-label"><font color="red">*</font> ชื่อยา</label>
 								<div class="col-md-6">
 									<form:select path="medicine.id" class="form-control Medicineid" id="Medicineid"  onchange="Listunit();">
 									 	<form:option value="0">เลือกชื่อยา (ทางการค้า)</form:option>
@@ -62,25 +62,44 @@
 						</div>
 						<div class="row form-group">
 		
-								<label class="col-md-offset-0 col-md-3 control-label">จำนวนคงคลัง</label>
+								<label class="col-md-offset-1 col-md-3 control-label">จำนวนคงคลัง</label>
 								<div class="col-md-6">
 									<input name="beforeQuantity" id="oquantity" type="text" class="form-control" readonly="true">
 								</div>
 						</div>
-						
-							
-					</div><!--  //จบคอลัมแรก -->
-					<div class="col-md-4 "> <!-- คอลัม2 -->
 						<div class="row form-group">
 							<label  class="col-md-offset-1 col-md-3 control-label"><font color="red">*</font> จำนวนที่สั่ง</label>
 							<div class="col-md-6">
 								<form:input path="quantity" type="number" class="form-control"/>
 							</div>
 						</div>
+						
+							
+					</div><!--  //จบคอลัมแรก -->
+					<div class="col-md-4 "> <!-- คอลัม2 -->
+						
 						<div class="row form-group">
-							<label  class="col-md-offset-1 col-md-3 control-label"><font color="red">*</font> หน่วย</label>
+							<label  class="col-md-offset-1 col-md-4 control-label"><font color="red">*</font> หน่วย</label>
 							<div class="col-md-6">
 								<input id="unitmed" type="text" class="form-control" readonly="true">
+							</div>
+						</div>
+						<div class="row form-group">
+							<label  class="col-md-offset-1 col-md-4 control-label"><font color="red">*</font>ราคารวม</label>
+							<div class="col-md-6">
+								<input  type="number" class="form-control" id="price"/>
+							</div>
+						</div>
+						<div class="row form-group">
+							<label  class="col-md-offset-1 col-md-4 control-label">ผลิต/นำเข้า</label>
+							<div class="col-md-6">
+								<input  class="form-control" id="importby"/>
+							</div>
+						</div>
+						<div class="row form-group">
+							<label  class="col-md-offset-1 col-md-4 control-label"><font color="red">*</font>ลอต</label>
+							<div class="col-md-6">
+								<input  type="number" class="form-control" id="lot"/>
 							</div>
 						</div>
 					</div> <!-- คอลัม2 -->
@@ -94,6 +113,7 @@
 							</button>
 						</center>
 					</div>
+					
 			</div>
 		</div>
 

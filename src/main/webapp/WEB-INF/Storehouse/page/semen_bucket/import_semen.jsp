@@ -78,13 +78,8 @@
 									</div>	
 								</div>
 						</div>
-					
-					
-						
-					</div><!--  //จบคอลัมแรก -->
-					<div class="col-md-4 "> <!-- คอลัม2 -->	
 						<div class="row form-group">
-							<label  class="col-md-offset-2 col-md-4 control-label"><font color="red">*</font> จำนวนที่นำเข้า</label>
+							<label  class="col-md-offset-1 col-md-3 control-label"><font color="red">*</font> จำนวนที่นำเข้า</label>
 							<div class="col-md-6">
 								<div class="input-group">
 							 		<input name="quantity" type="number" class="form-control" id="quantity" >													
@@ -92,13 +87,32 @@
 									</div>
 							</div>
 						</div>
+					
+					
+						
+					</div><!--  //จบคอลัมแรก -->
+					<div class="col-md-4 "> <!-- คอลัม2 -->	
+						
 						<div class="row form-group">
-							<label  class="col-md-offset-2 col-md-4 control-label"> ราคาต่อหลอด</label>
+							<label  class="col-md-offset-1 col-md-4 control-label"> ราคาต่อหลอด</label>
 							<div class="col-md-6">
 								<div class="input-group">
 							 		<input name="price" type="number" class="form-control" id="price" path=""/>													
 									<span class="input-group-addon" style="border-radius: 0px 10px 10px 0px;">บาท</span>
 									</div>
+							</div>
+						</div>
+						<div class="row form-group">
+							<label  class="col-md-offset-1 col-md-4 control-label"><font color="red">*</font>ลอต</label>
+							<div class="col-md-6">
+								<input  type="number" class="form-control"/>
+							</div>
+						</div>
+						<div class="row form-group">
+							<label  class="col-md-offset-1 col-md-4 control-label"><font color="red">*</font>ผลิต/นำเข้า</label>
+							<div class="col-md-6">
+
+									<input type="text" class="form-control" id="import_"/>
 							</div>
 						</div>
 						<!-- <div class="row form-group">

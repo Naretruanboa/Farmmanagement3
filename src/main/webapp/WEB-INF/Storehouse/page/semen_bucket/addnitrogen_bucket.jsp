@@ -129,11 +129,20 @@
 							</select>
 				</div>
 			</div><div class="row form-group">
-				<label class="col-md-offset-1 col-md-5 control-label">ปริมาณการนำออก</label>
+				<label class="col-md-offset-1 col-md-5 control-label">ปริมาณการนำเข้า</label>
 				<div class="form-inline">
 					<div class="input-group">
 						<input name="quantity" id="quantity" type="number" class="form-control input-sm " size="35" />
 						<span class="input-group-addon" style="border-radius: 0px 10px 10px 0px;">ลิตร</span>
+					</div>
+				</div>
+			</div>
+			<div class="row form-group">
+				<label class="col-md-offset-1 col-md-5 control-label">ราคาการเติมในไตรเจนหลว</label>
+				<div class="form-inline">
+					<div class="input-group">
+						<input name="quantity" id="quantity" type="number" class="form-control input-sm " size="35" />
+						<span class="input-group-addon" style="border-radius: 0px 10px 10px 0px;">บาท</span>
 					</div>
 				</div>
 			</div>

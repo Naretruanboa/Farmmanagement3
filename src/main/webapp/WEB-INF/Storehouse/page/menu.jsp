@@ -131,6 +131,40 @@ $(document).on('ready', function() {
                 </ul>               
         </li>
         <li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-usd"></i> ซื้อ/ขายโค<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li class="dropdown-submenu">
+								<a tabindex="-1">นำเข้าโค/ประวัติ</a>
+								<ul class="dropdown-menu">
+									<li><a tabindex="-1" href="view_beef">โคเนื้อ</a></li>
+									<li><a tabindex="-1" href="view_dairy">โคนม</a></li>
+								</ul>
+							</li>
+							<li class="dropdown-submenu">
+								<a tabindex="-1">ขาย/ส่งออกโค</a>
+								<ul class="dropdown-menu">
+									<li><a tabindex="-1" href="sell_beef">โคเนื้อ</a></li>
+									<li><a tabindex="-1" href="sell_dairy">โคนม</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-usd"></i> บัญชี<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<%--<li><a href="">นำเข้าบัญชี</a></li>--%>
+							<li class="dropdown-submenu"><a tabindex="-1">แก้ไขบัญชี</a>
+								<ul class="dropdown-menu">
+									<li><a tabindex="-1" href="account_medicine">ยา</a></li>
+									<li><a tabindex="-1" href="account_semen">น้ำเชื้อ</a></li>
+									<li><a tabindex="-1" href="account_raw">วัตถุดิบ</a></li>
+									<li><a tabindex="-1" href="account_tool">วัศดุอุปกรณ์</a></li>
+								</ul>
+							</li>
+							<li><a href="check_account">ตรวจสอบบัญชี</a></li>
+						</ul>
+					</li>
+        <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-file-text"></i> ออกรายงาน<b class="caret"></b></a>
               <ul class="dropdown-menu">				
 					<li><a href="report_stock">จำนวนคงคลัง</a></li>
