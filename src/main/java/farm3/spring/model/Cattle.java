@@ -28,6 +28,7 @@ public class Cattle implements java.io.Serializable {
 
 	private Integer id;
 	private Breed breed;
+	private StatusCow statusCow;
 	private Farm farmtId;
 	private TypeDairy typeDairy;
 	private Color color;
@@ -90,7 +91,7 @@ public class Cattle implements java.io.Serializable {
 	public Cattle() {
 	}
 
-	public Cattle (TypeDairy typeDairy, Breed breed, Farm farmtId, Color color, GroupCattle groupCattle, Sex sex, Stall stall, StatusBorn statusBorn,
+	public Cattle (TypeDairy typeDairy, Breed breed, StatusCow statusCow, Farm farmtId, Color color, GroupCattle groupCattle, Sex sex, Stall stall, StatusBorn statusBorn,
 			StatusCattle statusCattle, StatusTreat statusTreat, TypeCattle typeCattle, TypeNutrient typeNutrient,
 			String num, String numEar, String numDate, String name, Integer teeth, Integer age, Integer ageWean,
 			String ageHornDetering, String weight, String weightBirth, String weightWean, String calved, String maId,
@@ -101,6 +102,7 @@ public class Cattle implements java.io.Serializable {
 			Set<Breeding> breedingsForCattlefaId, Set<CattleYear> cattleYears, Set<CattleDetail> cattleDetails, CattlePedigree cattlePedigree, String price, String priceStart, 
 			String priceEnd, String registerNum, String owner, String breeder) {
 		this.breed = breed;
+		this.statusCow = statusCow;
 		this.farmtId = farmtId;
 		this.color = color;
 		this.groupCattle = groupCattle;
@@ -181,6 +183,21 @@ public class Cattle implements java.io.Serializable {
 	public void setBreed(Breed breed) {
 		this.breed = breed;
 	}
+	
+	
+	
+	
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "status_cow_id")
+	public StatusCow getStatusCow() {
+		return this.statusCow;
+	}
+
+	public void setStatusCow(StatusCow statusCow) {
+		this.statusCow = statusCow;
+	}
+	
+	
 	
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "farmt_id")

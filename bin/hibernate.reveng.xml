@@ -99,6 +99,7 @@
   <table-filter match-catalog="farmmanagement3" match-name="type_health"/>
   <table-filter match-catalog="farmmanagement3" match-name="type_dairy"/>
   <table-filter match-catalog="farmmanagement3" match-name="medicine_health"/>
+  <table-filter match-catalog="farmmanagement3" match-name="status_cow"/>
 
   
 </hibernate-reverse-engineering>

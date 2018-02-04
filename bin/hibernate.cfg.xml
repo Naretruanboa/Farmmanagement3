@@ -107,6 +107,7 @@
  	<mapping class="farm3.spring.model.TypeHealth"></mapping>
  	<mapping class="farm3.spring.model.TypeDairy"/>
  	<mapping class="farm3.spring.model.MedicineHealth"/>
+ 	<mapping class="farm3.spring.model.StatusCow"/>
  
     </session-factory> 
     
