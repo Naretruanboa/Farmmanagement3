@@ -45,7 +45,7 @@ public class Bucket implements java.io.Serializable {
 	private String dayInN;
 	private String dayExpN;
 	private String dayImport;
-	private String import_;
+	private String importBucket;
 	private String place;
 	private int statusalert;
 	private Set<Semen> semens = new HashSet<Semen>(0);
@@ -60,7 +60,7 @@ public class Bucket implements java.io.Serializable {
 	public Bucket(TypeBucket typeBucket, String code, String number, String name, String brand, String size,
 			Float weightnull, Float weightfull, Float diaPartition, Float diaBody, Float heightBody,
 			Float ratioNitrogen, Integer periodNitrogen, String goblet, Float diaCanister, Float heightCanister,
-			Integer quantityCanister, Float containPerC, String dayInN, String dayExpN, String dayImport, String import_,
+			Integer quantityCanister, Float containPerC, String dayInN, String dayExpN, String dayImport, String importBucket,
 			String place, int statusalert, Set<Semen> semens) {
 		this.typeBucket = typeBucket;
 		this.code = code;
@@ -83,7 +83,7 @@ public class Bucket implements java.io.Serializable {
 		this.dayInN = dayInN;
 		this.dayExpN = dayExpN;
 		this.dayImport = dayImport;
-		this.import_ = import_;
+		this.importBucket = importBucket;
 		this.place = place;
 		this.statusalert = statusalert;
 		this.semens = semens;
@@ -291,13 +291,13 @@ public class Bucket implements java.io.Serializable {
 		this.dayImport = dayImport;
 	}
 
-	@Column(name = "import", length = 100)
-	public String getImport_() {
-		return this.import_;
+	@Column(name = "import_bucket", length = 100)
+	public String getImportBucket() {
+		return this.importBucket;
 	}
 
-	public void setImport_(String import_) {
-		this.import_ = import_;
+	public void setImportBucket(String importBucket) {
+		this.importBucket = importBucket;
 	}
 
 	@Column(name = "place", length = 100)

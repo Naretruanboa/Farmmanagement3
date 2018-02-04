@@ -46,7 +46,7 @@ public class MainController {
 		String sessionUsername = (String)session.getAttribute("username");
 		map.put("ulist", memberService.getMemberByUsername(sessionUsername));
 		
-			ModelAndView model = new ModelAndView("HealthCare/index");
+			ModelAndView model = new ModelAndView("/index");
 			return model;
 	}
 	
@@ -61,7 +61,7 @@ public class MainController {
 		// TODO: handle exception
 			Member member =new Member();
 			map.put("member", member);
-			return "HealthCare/index";
+			return "/index";
 		}
 		
 	}
