@@ -327,6 +327,8 @@ public class HealthCareReproduceController {
 	}
 	
 	*/
+	
+	//############# breeding ###################
 
 	@RequestMapping(value="breeding",method=RequestMethod.GET)
 	public String breeding(HttpSession session,Map<String, Object> map) {
@@ -340,6 +342,7 @@ public class HealthCareReproduceController {
 		map.put("dAlertList", typealertservice.getAllTypeAlertById(2));
 		return "HealthCare/reproduce/breeding";  												
 	}
+
 	
 	@RequestMapping(value="/breeding_list")
 	public String breeding_list(HttpSession session,Map<String, Object> map) {
@@ -372,6 +375,71 @@ public class HealthCareReproduceController {
 		map.put("dAlertList", typealertservice.getAllTypeAlertById(2));
 		return "HealthCare/reproduce/breed_detail";  												
 	}
+	
+	@RequestMapping(value="breeding_edit")
+	public String breedingEdit(HttpSession session,Map<String, Object> map,@RequestParam int id) {
+		String sessionUsername = (String)session.getAttribute("username");  
+		map.put("ulist",memberService.getMemberByUsername(sessionUsername));
+		
+		Breeding breeding = breedingservice.getBreeding(id);
+		map.put("breeding", breeding);
+		Cattle cattle = cattleservice.getCattle(id);
+		map.put("cattle", cattle);
+		map.put("cattle" , cattleservice.getCattle(id));
+		map.put("cattle", cattleservice.getAllCattle());
+		map.put("breeding", breedingservice.getAllBreeding());
+		map.put("breeding", breedingservice.getBreeding(id));
+		map.put("dAlertList", typealertservice.getAllTypeAlertById(2));
+	
+		
+		return "HealthCare/reproduce/breed_edit";  												
+	}
+	
+	@RequestMapping("/breeding_edited")
+	public String breedingEdited(HttpSession session,Map<String, Object>map,@ModelAttribute Breeding breeding,@ModelAttribute Cattle cattle){
+		String sessionUsername = (String)session.getAttribute("username");  
+		map.put("ulist",memberService.getMemberByUsername(sessionUsername));
+		breedingservice.edit(breeding);
+		cattleservice.edit(cattle);
+		return "redirect:breeding_list";
+	}
+	
+	
+	
+	//############# breeding ###################
+	
+	
+	
+	
+//	@RequestMapping(value="horndeter_edit")
+//	public String Horndeter_edit(HttpSession session,Map<String, Object> map,@RequestParam int id) {
+//		String sessionUsername = (String)session.getAttribute("username");  
+//		map.put("ulist",memberService.getMemberByUsername(sessionUsername));
+//		
+//		HornDetering horndetering = horndeteringservice.getHornDetering(id) ;
+//		map.put("hornDetering", horndetering);
+//		Cattle cattle = cattleservice.getCattle(id);
+//		map.put("cattle", cattle);
+//		map.put("horn", horndeteringservice.getAllHornDetering());
+//		map.put("cattlehorn" , horndeteringservice.getHornDetering(id));
+//		map.put("cattle" , cattleservice.getCattle(id));
+//		map.put("cattle", cattleservice.getAllCattle());
+//		map.put("typehorn", typehornservice.getAllTypeHorn());
+//		
+//	
+//		map.put("calve", cattleservice.GetCalves1(3));
+//		
+//		return "HealthCare/calves/horndeter_edit";  												
+//	}
+//	
+//	@RequestMapping("/horndeter_edited")
+//	public String horndeter_edited(HttpSession session,Map<String, Object>map,@ModelAttribute HornDetering hornDetering,@ModelAttribute Cattle cattle){
+//		String sessionUsername = (String)session.getAttribute("username");  
+//		map.put("ulist",memberService.getMemberByUsername(sessionUsername));
+//		horndeteringservice.edit(hornDetering);
+//		cattleservice.edit(cattle);
+//		return "redirect:horndeter_list";
+//	}
 	
 	
 //	@RequestMapping(value="detailbreeding",method=RequestMethod.POST)
