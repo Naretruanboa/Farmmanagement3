@@ -72,6 +72,7 @@ public class Cattle implements java.io.Serializable {
 	@Expose private String alert4;
 	private Integer pedigreeId;
 
+	private Set<Pregnant> cattlemaId = new HashSet<Pregnant>(0);
 	private Set<Synchronize> synchronizes = new HashSet<Synchronize>(0);
 	private Set<CattleWean> cattleWeans = new HashSet<CattleWean>(0);
 	private Set<HornDetering> hornDeterings = new HashSet<HornDetering>(0);
@@ -99,7 +100,7 @@ public class Cattle implements java.io.Serializable {
 			Set<Synchronize> synchronizes, Set<CattleWean> cattleWeans, Set<HornDetering> hornDeterings,
 			Set<Misscarry> misscarries, Set<Breeding> breedingsForCattlemaId, Set<CountBreed> countBreeds,
 			Set<CattleStamp> cattleStamps, Set<TreatmentHistory> treatmentHistories, Set<Alert> alerts,
-			Set<Breeding> breedingsForCattlefaId, Set<CattleYear> cattleYears, Set<CattleDetail> cattleDetails, CattlePedigree cattlePedigree, String price, String priceStart, 
+			Set<Breeding> breedingsForCattlefaId, Set<CattleYear> cattleYears, Set<Pregnant> cattlemaId, Set<CattleDetail> cattleDetails, CattlePedigree cattlePedigree, String price, String priceStart, 
 			String priceEnd, String registerNum, String owner, String breeder) {
 		this.breed = breed;
 		this.statusCow = statusCow;
@@ -145,6 +146,7 @@ public class Cattle implements java.io.Serializable {
 		this.breedingsForCattlefaId = breedingsForCattlefaId;
 		this.cattleYears = cattleYears;
 		this.cattleDetails = cattleDetails;
+		this.cattlemaId = cattlemaId;
 		this.cattlePedigree  = cattlePedigree;
 		this.typeDairy = typeDairy;
 		this.price = price;
@@ -554,6 +556,15 @@ public class Cattle implements java.io.Serializable {
 
 	public void setBreedingsForCattlemaId(Set<Breeding> breedingsForCattlemaId) {
 		this.breedingsForCattlemaId = breedingsForCattlemaId;
+	}
+	
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "cattlemaId")
+	public Set<Pregnant> getCattleMaId() {
+		return this.cattlemaId;
+	}
+
+	public void setCattleMaId(Set<Pregnant> cattlemaId) {
+		this.cattlemaId = cattlemaId;
 	}
 
 	@OneToMany(fetch = FetchType.LAZY, mappedBy = "cattle")

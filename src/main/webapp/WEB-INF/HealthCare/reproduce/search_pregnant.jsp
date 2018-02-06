@@ -26,7 +26,7 @@ int i=1+a;
 										
 											
 										<td>
-										<form:form action="pregnant_edit?id=${prg.id }" method="POST" commandName="sh">
+										<form:form action="pregnant_editT?id=${prg.id }" method="POST" commandName="sh">
 												<button type="submit" class="btn btn-primary">
 												<i class="glyphicon glyphicon-pencil"></i>
 												</button>

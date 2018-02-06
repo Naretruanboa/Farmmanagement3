@@ -31,13 +31,13 @@ public class Pregnant implements java.io.Serializable {
 	private String note;
 	private String cattle;
 	private Integer stat;
-	/*private Integer cattlemaId;*/
+	private Cattle cattlemaId;
 
 	public Pregnant() {
 	}
 
 	public Pregnant(Breeding breeding, Member member, StatusPregnant statusPregnant, String datePreg, String dateSchedule,
-			String timePreg, String note, String cattle, Integer stat/*, Integer cattlemaId*/) {
+			String timePreg, String note, String cattle, Integer stat, Cattle cattlemaId) {
 		this.breeding = breeding;
 		this.member = member;
 		this.statusPregnant = statusPregnant;
@@ -47,7 +47,7 @@ public class Pregnant implements java.io.Serializable {
 		this.note = note;
 		this.cattle = cattle;
 		this.stat = stat;
-		/*this.cattlemaId = cattlemaId;*/
+		this.cattlemaId = cattlemaId;
 	}
 
 	@Id
@@ -81,7 +81,18 @@ public class Pregnant implements java.io.Serializable {
 	public void setMember(Member member) {
 		this.member = member;
 	}
+	
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "cattlema_id")
+	public Cattle getCattlemaId() {
+		return this.cattlemaId;
+	}
 
+	public void setCattlemaId(Cattle cattlemaId) {
+		this.cattlemaId = cattlemaId;
+	}
+
+	
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "status_pregnant_id")
 	public StatusPregnant getStatusPregnant() {
@@ -146,14 +157,5 @@ public class Pregnant implements java.io.Serializable {
 		this.stat = stat;
 	}
 	
-	/*@ManyToOne(fetch = FetchType.LAZY)
-	@Column(name = "cattlemaId")
-	public Integer getCattlemaId() {
-		return this.cattlemaId;
-	}
-
-	public void setCattlemaId(Integer cattlemaId) {
-		this.cattlemaId = cattlemaId;
-	}*/
-
+	
 }

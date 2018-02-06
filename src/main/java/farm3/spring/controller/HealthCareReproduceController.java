@@ -452,13 +452,13 @@ public class HealthCareReproduceController {
 //		return "HealthCare/health/disease_detail";  												
 //	}
 
-	
+////////////////////////////	
 	@RequestMapping(value="pregnant",method=RequestMethod.GET)
 	public String pregnant(HttpSession session,Map<String, Object> map) {
 		String sessionUsername = (String)session.getAttribute("username");  
 		map.put("ulist",memberService.getMemberByUsername(sessionUsername));
 		Pregnant pregnant = new Pregnant();
-		map.put("pregnant", pregnant);
+		map.put("preGnant", pregnant);
 		map.put("memcat", cattleservice.GetMomCattle(2));
 		//map.put("memcat", pregnantservice.getPregnantBynum(2));
 		map.put("statprege", statuspregnantservice.getAllStatusPregnant());
@@ -473,9 +473,9 @@ public class HealthCareReproduceController {
 	public String pregnant_list(HttpSession session,Map<String, Object> map) {
 		String sessionUsername = (String)session.getAttribute("username");  
 		map.put("ulist",memberService.getMemberByUsername(sessionUsername));
-		Pregnant pregnantG = new Pregnant();
-		map.put("preG", pregnantG);
-		map.put("pregnant", pregnantservice.getAllPregnant());
+		Pregnant pregnant = new Pregnant();
+		map.put("pregnant", pregnant);
+		map.put("pregnantall", pregnantservice.getAllPregnant());
 		map.put("memcat", cattleservice.GetMomCattle(2));
 		//map.put("memcat", pregnantservice.getPregnantBynum(2));
 		map.put("statprege", statuspregnantservice.getAllStatusPregnant());
@@ -510,8 +510,8 @@ public class HealthCareReproduceController {
 		return "HealthCare/reproduce/pregnant_detail";  												
 	}
 	
-	@RequestMapping(value="/pregnant_edit",method=RequestMethod.POST)
-	public String pregnant_edit(Map<String, Object> map,@RequestParam("id") int id,HttpSession session) {
+	@RequestMapping(value="pregnant_editT",method=RequestMethod.POST)
+	public String pregnantEditT(Map<String, Object> map,@RequestParam("id") int id,HttpSession session) {
 		String sessionUsername = (String)session.getAttribute("username");  
 		map.put("ulist",memberService.getMemberByUsername(sessionUsername));
 
@@ -520,11 +520,15 @@ public class HealthCareReproduceController {
 //		map.put("breeding", breedingservice.getAllBreeding());
 //		map.put("breeding", breedingservice.getBreeding(id));
 			
-		Pregnant pregnantG = new Pregnant();
-		map.put("preG", pregnantG);
-		map.put("pregnant", pregnantservice.getAllPregnant());
-		map.put("pregnant", pregnantservice.getPregnant(id));
+		Pregnant pregnant = new Pregnant();
+		map.put("preGnant", pregnant);
+		map.put("preGnant", pregnantservice.getAllPregnant());
+		map.put("preGnant", pregnantservice.getPregnant(id));
 		map.put("memcat", cattleservice.GetMomCattle(2));
+		Cattle cattle = cattleservice.getCattle(id);
+		map.put("cattle", cattle);
+		map.put("cattleId" , cattleservice.getCattle(id));
+		map.put("cattleall", cattleservice.getAllCattle());
 //		//map.put("memcat", pregnantservice.getPregnantBynum(2));
 		map.put("statprege", statuspregnantservice.getAllStatusPregnant());
 //		map.put("dAlertList", typealertservice.getAllTypeAlertById(3));
@@ -535,7 +539,16 @@ public class HealthCareReproduceController {
 	}
 	
 	
-	///
+	@RequestMapping("pregnant_editedT")
+	public String pregnantEditedT(HttpSession session,Map<String, Object>map,@ModelAttribute Pregnant preGnant,@ModelAttribute Cattle cattle){
+		String sessionUsername = (String)session.getAttribute("username");  
+		map.put("ulist",memberService.getMemberByUsername(sessionUsername));
+		breedingservice.edit(preGnant);
+		cattleservice.edit(cattle);
+		return "redirect:pregnant_list";
+	}
+	
+	//////////////////////////
 	@RequestMapping("/listValue5")
 	public @ResponseBody String listValue5(@RequestParam int id) {
 
