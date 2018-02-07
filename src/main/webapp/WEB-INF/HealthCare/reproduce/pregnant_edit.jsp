@@ -516,7 +516,7 @@ else if (vfullearly == "2")
 								<div class="col-md-6">
 														
 									<form:select class="form-control" id="member.id" path="member.id">
-										<%-- <form:option value="0">ผู้บันทึก</form:option> --%>
+										  <form:option value="0">ผู้บันทึก</form:option> --%>
 												<c:forEach items="${ulist}" var="user">
 													<c:if test="${member.id == user.id }">
 														<form:option value="${un.id}" selected="selected">${user.first}&nbsp;${user.last }</form:option></c:if>

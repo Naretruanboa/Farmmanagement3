@@ -16,7 +16,7 @@ try{
 	List<Map<String, ?>> dataSource = (List<Map<String, ?>>) request.getAttribute("List");
 	
 	JRDataSource jrDataSource = new JRBeanCollectionDataSource(dataSource);
-	String jrxmlFile = session.getServletContext().getRealPath("/WEB-INF/pdf/ReportBreed.jrxml");
+	String jrxmlFile = session.getServletContext().getRealPath("/WEB-INF/HealthCare/pdf/ReportBreed.jrxml");
 	Map<String, Object> parameters = new HashMap<String, Object>();
 	
 	InputStream input = new FileInputStream(new File(jrxmlFile));

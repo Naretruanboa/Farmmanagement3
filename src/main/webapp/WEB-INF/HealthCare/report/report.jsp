@@ -178,7 +178,7 @@ $(document).on('click','#btnReport',function(e){
 		swal("ผิดพลาด!", "กรุณาเลือกวันที่ให้ถูกต้อง", "error");
 	}else{
 		
-	window.open("ReportImport?idReport="+idReport+"&dateStart="+dateStart+"&dateEnd="+dateEnd);
+	window.open("ReportHealthCare?idReport="+idReport+"&dateStart="+dateStart+"&dateEnd="+dateEnd);
 	
 	}
 });
