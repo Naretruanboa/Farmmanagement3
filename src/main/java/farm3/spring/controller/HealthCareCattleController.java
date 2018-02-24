@@ -202,8 +202,10 @@ public class HealthCareCattleController {
 		Cattle cattle = cattleservice.getCattle(id);
 		map.put("shc", cattle);
 		map.put("cattle", cattleservice.getAllCattle());
+		map.put("cattleid", cattleservice.getCattle(id));
 		map.put("type", typrcattleservice.getAllTypeCattle());
 		map.put("stabreed", breedService.getAllBreed());
+		map.put("stadairy", typeDairyservice.getAllTypeDairy());
 		map.put("stacattle", statuscattleservice.getAllStatusCattle());
 		map.put("colo", colorservice.getAllColor());
 		map.put("groupcattle", groupcattleservice.getAllGroupCattle());

@@ -58,7 +58,7 @@
 									<div class="row form-group">
 										<label class="col-md-offset-s col-md-3 control-lable"><font color="red"> *</font> ชื่อโค</label>
 										<div class="col-md-6">
-											<form:input path="name" id="" type="name" class="form-control"/>
+											<form:input path="name" id="name" type="name" class="form-control"/>
 										</div>
 									</div>	
 									
@@ -101,27 +101,53 @@
 										 	</div>											
 									</div>
 									</div>									
-								
-									<div class="row form-group">
-										<label class="col-md-offset-s col-md-3 control-label"><font color="red">*</font> สายพันธุ์</label>
-									<div class="col-md-6">
-										 	<div>
-												<form:select class="form-control" id="Breed.id" path="Breed.id">
-													<form:option value="0">สายพันธุ์</form:option>
-															<c:forEach items="${stabreed}" var="stabreedn">
-																< <c:if test="${Breed.id == stabreedn.id }">
-																	<form:option value="${Breed.id}" selected="selected">${stabreedn.value}</form:option></c:if> 
-																		
-																<c:if test="${Breed.id != stabreedn.id }">
-																<form:option value="${stabreedn.id }">${stabreedn.value}</form:option>
-																</c:if>
-																		
-														</c:forEach>
-												</form:select>
-										 	</div>											
+									<%-- 	<input value="${cattleid.typeCattle.id }" />	 --%>
+										<c:if test="${cattleid.typeCattle.id == 1}">				
+											<div class="row form-group">
+												<label class="col-md-offset-s col-md-3 control-label"><font color="red">*</font> สายพันธุ์</label>
+											<div class="col-md-6">
+												 	<div>
+														<form:select class="form-control" id="Breed.id" path="Breed.id">
+															<form:option value="0">สายพันธุ์</form:option>
+																	<c:forEach items="${stabreed}" var="stabreedn">
+																		< <c:if test="${Breed.id == stabreedn.id }">
+																			<form:option value="${Breed.id}" selected="selected">${stabreedn.value}</form:option></c:if> 
+																				
+																		<c:if test="${Breed.id != stabreedn.id }">
+																		<form:option value="${stabreedn.id }">${stabreedn.value}</form:option>
+																		</c:if>
+																				
+																</c:forEach>
+														</form:select>
+												 	</div>											
+											</div>
+											</div>				
+										</c:if>	
+										
+										<c:if test="${cattleid.typeCattle.id == 2}">
+										
+											<div class="row form-group">
+											<label class="col-md-offset-s col-md-3 control-label"><font color="red">*</font> สายพันธุ์</label>
+											<div class="col-md-6">
+											 	<div>
+													<form:select class="form-control" id="TypeDairy.id" path="TypeDairy.id">
+														<form:option value="0">สายพันธุ์</form:option>
+																<c:forEach items="${stadairy}" var="stadairy">
+																	<c:if test="${TypeDairy.id == stadairy.id }">
+																		<form:option value="${TypeDairy.id}" selected="selected">${stadairy.value}</form:option></c:if>
+																			
+																	<c:if test="${TypeDairy.id != stadairy.id }">
+																	<form:option value="${stadairy.id }">${stadairy.value}</form:option>
+																	</c:if>
+																			
+															</c:forEach>
+													</form:select>
+											 	</div>											
 									</div>
-									</div>				
-									
+									</div>
+										
+										</c:if>
+										
 										<div class="row form-group">
 											<label class="col-md-offset-s col-md-3 control-lable"><font color="red"> </font>น้ำหนักแรกเกิด</label>
 											<div class="col-md-6">
@@ -216,7 +242,7 @@
 											<label class="col-md-offset-s col-md-3 control-lable"><font color="red">* </font> สถานะโค</label>
 												<div class="col-md-6">
 							 						<div>
-														<form:select class="form-control" id="memberid" path="statusTreat.id">
+														<form:select class="form-control" id="statusTreat.id" path="statusTreat.id">
 															<%-- <form:option value="0">ผู้บันทึก</form:option> --%>
 																	<c:forEach items="${statT}" var="statT">
 					
@@ -262,7 +288,7 @@
 									<label class="col-md-offset-s col-md-3 control-label"><font color="red">*</font> ระบุฟาร์ม</label>
 								<div class="col-md-6">
 										 <div>
-											<form:select class="form-control" type="hidden" id="FarmtId.id" path="farmtId.id">
+											<form:select class="form-control" type="hidden" id="farmtId.id" path="farmtId.id">
 												 <form:option value="0">กรุณาเลือกฟาร์ม</form:option> 
 														<c:forEach items="${farmtid}" var="farm">
 															<c:if test="${Farm.id == farm.id }">
@@ -415,18 +441,32 @@
 					}else if($("#typeCattle\\.id").val() == "0"){
 						swal("กรุณาเลือกประเภทของโค");
 					}else if($("#calved").val() == ""){
-						swal("กรุณากรอกวันเกิด");	
-					}else if($("#statusCattle\\.id").val() == "0"){
+						swal("กรุณากรอกวันเกิด");		
+					}else if($("#sex\\.id").val()=="0"){
 						swal("กรุณาเลือกเพศ");
 					}else if($("#Breed\\.id").val() == "0"){
-						swal("กรุณาเลือกสายพันธุ์");
+						swal("กรุณาเลือกสายพันธุ์");	
+					}else if($("#weightBirth").val() == ""){
+						swal("กรุณาระบุน้ำหนักแรกเกิด");
+					}else if($("#weight").val() == ""){
+						swal("กรุณาระบุน้ำหนัก");	
+					}else if($("#weightWean").val() == ""){
+						swal("กรุณาระบุน้ำหนัก");
 					}else if($("#faId").val() == ""){
 						swal("กรุณากรอกรหัสพ่อ");
 					}else if($("#maId").val() == ""){
-						swal("กรุณากรอกรหัสแม่");						
+						swal("กรุณากรอกรหัสแม่");
 					}else if($("#color\\.id").val() == "0"){
 						swal("กรุณากรอกสีโค");	
-					}else if($("#farm\\.id").val() == "0"){
+					}else if($("#groupCattle\\.id").val() == "0"){
+						swal("กรุณากรอกฝูง");		
+					}else if($("#statusCattle\\.id").val() == "0"){
+						swal("กรุณาเลือกเพศ");
+					}else if($("#stall\\.id").val() == "0"){
+						swal("กรุณาเลือกคอก");						
+					}else if($("#farm").val() == ""){
+						swal("กรุณากรอกฟาร์ม");	
+					}else if($("#farmtId\\.id").val() == "0"){
 						swal("กรุณากรอกฟาร์ม");						
 					}else{
 
